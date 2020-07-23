@@ -1,0 +1,3 @@
+[submodule "awesomeDialogs"]
+	path = awesomeDialogs
+	url = https://github.com/ishangavidusha/awesomeDialogs.git
