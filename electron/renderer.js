@@ -8,7 +8,7 @@ const path = require("path");
 let mainWindow = null;
 let subpy = null;
 
-const FLUTTER_PATH = path.join(__dirname, '../build/web/index.html'); // Flutter build web index.html
+const FLUTTER_PATH = path.join(__dirname, 'web/index.html'); // Flutter build web index.html
 const PY_DIST_FOLDER = "dist-python"; // python distributable folder
 const PY_SRC_FOLDER = "app"; // path to the python source
 const PY_MODULE = "fileApi.py"; // the name of the main module

@@ -1,0 +1,441 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<DOCUMENT Type="Advanced Installer" CreateVersion="17.2" version="17.2" Modules="professional" RootPath="." Language="en" Id="{4079D0B4-B82F-461D-9717-E77EC922FC74}">
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiPropsComponent">
+    <ROW Property="AI_BITMAP_DISPLAY_MODE" Value="0"/>
+    <ROW Property="AI_FINDEXE_TITLE" Value="Select the installation package for [|ProductName]" ValueLocId="AI.Property.FindExeTitle"/>
+    <ROW Property="ALLUSERS" Value="1"/>
+    <ROW Property="ARPCOMMENTS" Value="This installer database contains the logic and data required to install [|ProductName]." ValueLocId="*"/>
+    <ROW Property="ARPCONTACT" Value="ishangavidusha@gmail.com"/>
+    <ROW Property="ARPHELPTELEPHONE" Value="+821079217014"/>
+    <ROW Property="ARPNOMODIFY" MultiBuildValue="DefaultBuild:1"/>
+    <ROW Property="ARPNOREPAIR" Value="1" MultiBuildValue="DefaultBuild:1"/>
+    <ROW Property="ARPPRODUCTICON" Value="icon.exe" Type="8"/>
+    <ROW Property="BannerBitmap" Value="banner" MultiBuildValue="DefaultBuild:logo_bg_banner.jpg" Type="1" MsiKey="BannerBitmap"/>
+    <ROW Property="CTRLS" Value="2"/>
+    <ROW Property="DialogBitmap" Value="dialog" MultiBuildValue="DefaultBuild:logo_bg.jpg" Type="1" MsiKey="DialogBitmap"/>
+    <ROW Property="Manufacturer" Value="E9pay"/>
+    <ROW Property="ProductCode" Value="1033:{0A4E0582-4DC3-4008-9019-13E7FF2B9372} " Type="16"/>
+    <ROW Property="ProductLanguage" Value="1033"/>
+    <ROW Property="ProductName" Value="E9pass Manager"/>
+    <ROW Property="ProductVersion" Value="1.1.8.0" Type="32" TargetFile="E9passManager.exe"/>
+    <ROW Property="SecureCustomProperties" Value="OLDPRODUCTS;AI_NEWERPRODUCTFOUND;AI_SETUPEXEPATH;SETUPEXEDIR"/>
+    <ROW Property="UpgradeCode" Value="{39056D89-FF42-4039-91FE-3347A220981E}"/>
+    <ROW Property="WindowsType9X" MultiBuildValue="DefaultBuild:Windows 9x/ME" ValueLocId="-"/>
+    <ROW Property="WindowsType9XDisplay" MultiBuildValue="DefaultBuild:Windows 9x/ME" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT40" MultiBuildValue="DefaultBuild:Windows NT 4.0" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT40Display" MultiBuildValue="DefaultBuild:Windows NT 4.0" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT50" MultiBuildValue="DefaultBuild:Windows 2000" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT50Display" MultiBuildValue="DefaultBuild:Windows 2000" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT5X" MultiBuildValue="DefaultBuild:Windows XP/2003" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT5XDisplay" MultiBuildValue="DefaultBuild:Windows XP/2003" ValueLocId="-"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiDirsComponent">
+    <ROW Directory="APPDIR" Directory_Parent="TARGETDIR" DefaultDir="APPDIR:." IsPseudoRoot="1"/>
+    <ROW Directory="DesktopFolder" Directory_Parent="TARGETDIR" DefaultDir="DESKTO~1|DesktopFolder" IsPseudoRoot="1"/>
+    <ROW Directory="ProgramMenuFolder" Directory_Parent="TARGETDIR" DefaultDir="PROGRA~1|ProgramMenuFolder" IsPseudoRoot="1"/>
+    <ROW Directory="SHORTCUTDIR" Directory_Parent="TARGETDIR" DefaultDir="SHORTC~1|SHORTCUTDIR" IsPseudoRoot="1"/>
+    <ROW Directory="TARGETDIR" DefaultDir="SourceDir"/>
+    <ROW Directory="app_Dir" Directory_Parent="resources_Dir" DefaultDir="app"/>
+    <ROW Directory="assets_1_Dir" Directory_Parent="awesome_dialog_Dir" DefaultDir="assets"/>
+    <ROW Directory="assets_2_Dir" Directory_Parent="cupertino_icons_Dir" DefaultDir="assets"/>
+    <ROW Directory="assets_Dir" Directory_Parent="web_Dir" DefaultDir="assets"/>
+    <ROW Directory="awesome_dialog_Dir" Directory_Parent="packages_Dir" DefaultDir="AWESOM~1|awesome_dialog"/>
+    <ROW Directory="bin_Dir" Directory_Parent="pstree_Dir" DefaultDir="bin"/>
+    <ROW Directory="cupertino_icons_Dir" Directory_Parent="packages_Dir" DefaultDir="CUPERT~1|cupertino_icons"/>
+    <ROW Directory="distpython_Dir" Directory_Parent="app_Dir" DefaultDir="DIST-P~1|dist-python"/>
+    <ROW Directory="duplexer_Dir" Directory_Parent="node_modules_Dir" DefaultDir="duplexer"/>
+    <ROW Directory="eventstream_Dir" Directory_Parent="node_modules_Dir" DefaultDir="EVENT-~1|event-stream"/>
+    <ROW Directory="flare_Dir" Directory_Parent="assets_1_Dir" DefaultDir="flare"/>
+    <ROW Directory="fonts_Dir" Directory_Parent="assets_Dir" DefaultDir="fonts"/>
+    <ROW Directory="from_Dir" Directory_Parent="node_modules_Dir" DefaultDir="from"/>
+    <ROW Directory="icons_Dir" Directory_Parent="web_Dir" DefaultDir="icons"/>
+    <ROW Directory="images_Dir" Directory_Parent="assets_Dir" DefaultDir="images"/>
+    <ROW Directory="locales_Dir" Directory_Parent="APPDIR" DefaultDir="locales"/>
+    <ROW Directory="mapstream_Dir" Directory_Parent="node_modules_Dir" DefaultDir="MAP-ST~1|map-stream"/>
+    <ROW Directory="node_modules_Dir" Directory_Parent="app_Dir" DefaultDir="NODE_M~1|node_modules"/>
+    <ROW Directory="packages_Dir" Directory_Parent="assets_Dir" DefaultDir="packages"/>
+    <ROW Directory="pausestream_Dir" Directory_Parent="node_modules_Dir" DefaultDir="PAUSE-~1|pause-stream"/>
+    <ROW Directory="pstree_Dir" Directory_Parent="node_modules_Dir" DefaultDir="ps-tree"/>
+    <ROW Directory="resources_Dir" Directory_Parent="APPDIR" DefaultDir="RESOUR~1|resources"/>
+    <ROW Directory="split_Dir" Directory_Parent="node_modules_Dir" DefaultDir="split"/>
+    <ROW Directory="streamcombiner_Dir" Directory_Parent="node_modules_Dir" DefaultDir="STREAM~1|stream-combiner"/>
+    <ROW Directory="swiftshader_Dir" Directory_Parent="APPDIR" DefaultDir="SWIFTS~1|swiftshader"/>
+    <ROW Directory="through_Dir" Directory_Parent="node_modules_Dir" DefaultDir="through"/>
+    <ROW Directory="web_Dir" Directory_Parent="app_Dir" DefaultDir="web"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiCompsComponent">
+    <ROW Component="AI_ExePath" ComponentId="{9874B4F1-61DF-495D-8D24-752A73BE2026}" Directory_="APPDIR" Attributes="4" KeyPath="AI_ExePath"/>
+    <ROW Component="APPDIR" ComponentId="{A71C2544-F119-4DC2-B9B7-10DB44D67B07}" Directory_="APPDIR" Attributes="0"/>
+    <ROW Component="AssetManifest.json" ComponentId="{2B90A737-9597-4623-A2AD-5E46F160044F}" Directory_="assets_Dir" Attributes="0" KeyPath="AssetManifest.json" Type="0"/>
+    <ROW Component="CupertinoIcons.ttf" ComponentId="{5B43E7F9-EB70-46B0-B2CD-D38223E3A520}" Directory_="assets_2_Dir" Attributes="0" Type="0"/>
+    <ROW Component="E9passManager.exe" ComponentId="{A4B017F9-EC59-4269-9173-2964D8FF818D}" Directory_="APPDIR" Attributes="256" KeyPath="E9passManager.exe"/>
+    <ROW Component="Icon192.png" ComponentId="{DC449DEA-B1C9-43A4-9982-96E7A01AF1EA}" Directory_="icons_Dir" Attributes="0" KeyPath="Icon192.png" Type="0"/>
+    <ROW Component="MaterialIconsRegular.ttf" ComponentId="{D2500153-9F29-4CEA-83BF-A16681AB7431}" Directory_="fonts_Dir" Attributes="0" Type="0"/>
+    <ROW Component="ProductInformation" ComponentId="{3E142D36-3DAE-4A53-9D09-5A2264673327}" Directory_="APPDIR" Attributes="4" KeyPath="Version"/>
+    <ROW Component="SHORTCUTDIR" ComponentId="{D88C22EE-11E3-47BE-9EAF-10BFAE2704FE}" Directory_="SHORTCUTDIR" Attributes="0"/>
+    <ROW Component="am.pak" ComponentId="{FE2D8EB0-9007-49F2-817F-ABEF1E697EF3}" Directory_="locales_Dir" Attributes="0" KeyPath="am.pak" Type="0"/>
+    <ROW Component="chrome_100_percent.pak" ComponentId="{C8519439-07E0-49F8-AC0B-7F87D61F8BCA}" Directory_="APPDIR" Attributes="0" KeyPath="chrome_100_percent.pak" Type="0"/>
+    <ROW Component="d3dcompiler_47.dll" ComponentId="{AAA5BDCC-686A-4467-9A42-8A879A99424A}" Directory_="APPDIR" Attributes="256" KeyPath="d3dcompiler_47.dll"/>
+    <ROW Component="elevate.exe" ComponentId="{C540EC31-A5F1-4C80-8E72-47143DC673BF}" Directory_="resources_Dir" Attributes="0" KeyPath="elevate.exe"/>
+    <ROW Component="error.flr" ComponentId="{EC84F179-2217-4BDC-B25A-64F9E59AD2A9}" Directory_="flare_Dir" Attributes="0" KeyPath="error.flr" Type="0"/>
+    <ROW Component="ffmpeg.dll" ComponentId="{A667E2E4-5C67-4CFA-9CFF-32FD1258BD60}" Directory_="APPDIR" Attributes="256" KeyPath="ffmpeg.dll"/>
+    <ROW Component="fileApi.exe" ComponentId="{BA0994D9-D03A-49FB-B268-20B5E9D1A6E0}" Directory_="distpython_Dir" Attributes="256" KeyPath="fileApi.exe"/>
+    <ROW Component="icon.png" ComponentId="{31C987D4-5F0E-47D5-9AF4-F68E7FC3659C}" Directory_="app_Dir" Attributes="0" KeyPath="icon.png" Type="0"/>
+    <ROW Component="index.js" ComponentId="{663A2037-D8B0-4AF4-90A1-259DBF6725F9}" Directory_="duplexer_Dir" Attributes="0" KeyPath="index.js" Type="0"/>
+    <ROW Component="index.js_1" ComponentId="{CCDD977E-A12E-4B77-B0BB-EC76A16F7850}" Directory_="eventstream_Dir" Attributes="0" KeyPath="index.js_1" Type="0"/>
+    <ROW Component="index.js_2" ComponentId="{A6B65C11-B07C-40B9-9A84-19D945176F01}" Directory_="from_Dir" Attributes="0" KeyPath="index.js_2" Type="0"/>
+    <ROW Component="index.js_3" ComponentId="{08215D93-0059-4832-A2DC-D32AE091E256}" Directory_="mapstream_Dir" Attributes="0" KeyPath="index.js_3" Type="0"/>
+    <ROW Component="index.js_4" ComponentId="{AAFA74DE-FE02-4068-AC4E-959CA30C59F3}" Directory_="pausestream_Dir" Attributes="0" KeyPath="index.js_4" Type="0"/>
+    <ROW Component="index.js_5" ComponentId="{C502FB68-37BD-4883-8A01-BD01385F95D5}" Directory_="pstree_Dir" Attributes="0" KeyPath="index.js_5" Type="0"/>
+    <ROW Component="index.js_6" ComponentId="{FBE679A0-8CDB-4F88-A3BE-AAE0F2D41538}" Directory_="split_Dir" Attributes="0" KeyPath="index.js_6" Type="0"/>
+    <ROW Component="index.js_7" ComponentId="{89295B65-6F18-46D7-9A8C-91D5A19A8511}" Directory_="streamcombiner_Dir" Attributes="0" KeyPath="index.js_7" Type="0"/>
+    <ROW Component="index.js_8" ComponentId="{2F47E749-0543-43C1-AFF4-6BF96C209C5E}" Directory_="through_Dir" Attributes="0" KeyPath="index.js_8" Type="0"/>
+    <ROW Component="jpg" ComponentId="{21CD3976-6DB7-4F32-AD91-2A623A620300}" Directory_="images_Dir" Attributes="0" KeyPath="jpg" Type="0"/>
+    <ROW Component="last_build_id" ComponentId="{C5D7F27F-4CAC-4725-BFAC-DDA53C57B2C2}" Directory_="web_Dir" Attributes="0" KeyPath="last_build_id" Type="0"/>
+    <ROW Component="libEGL.dll" ComponentId="{E2C4E596-991C-4F5A-9F56-EE7F42F8DA19}" Directory_="APPDIR" Attributes="256" KeyPath="libEGL.dll"/>
+    <ROW Component="libEGL.dll_1" ComponentId="{9A153E2D-25ED-4721-BAE9-1901316C5A28}" Directory_="swiftshader_Dir" Attributes="256" KeyPath="libEGL.dll_1"/>
+    <ROW Component="libGLESv2.dll" ComponentId="{9AE090B0-7203-47A7-A688-C5EB92F9B38C}" Directory_="APPDIR" Attributes="256" KeyPath="libGLESv2.dll"/>
+    <ROW Component="libGLESv2.dll_1" ComponentId="{5B960EB0-022B-41DD-AB9F-F420402D0E27}" Directory_="swiftshader_Dir" Attributes="256" KeyPath="libGLESv2.dll_1"/>
+    <ROW Component="pstree.js" ComponentId="{E4C49D3B-5D08-4266-9D69-D760A3EDF79F}" Directory_="bin_Dir" Attributes="0" KeyPath="pstree.js" Type="0"/>
+    <ROW Component="vk_swiftshader.dll" ComponentId="{9E270896-0B97-4FA1-939E-E1B5D2C0D90E}" Directory_="APPDIR" Attributes="256" KeyPath="vk_swiftshader.dll"/>
+    <ROW Component="vulkan1.dll" ComponentId="{82A0034C-28C4-4D40-A478-873A20ED3C9E}" Directory_="APPDIR" Attributes="256" KeyPath="vulkan1.dll"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiFeatsComponent">
+    <ROW Feature="MainFeature" Title="MainFeature" Description="Description" Display="1" Level="1" Directory_="APPDIR" Attributes="0"/>
+    <ATTRIBUTE name="CurrentFeature" value="MainFeature"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiFilesComponent">
+    <ROW File="chrome_100_percent.pak" Component_="chrome_100_percent.pak" FileName="CHROME~1.PAK|chrome_100_percent.pak" Attributes="0" SourcePath="dist\win-unpacked\chrome_100_percent.pak" SelfReg="false"/>
+    <ROW File="chrome_200_percent.pak" Component_="chrome_100_percent.pak" FileName="CHROME~2.PAK|chrome_200_percent.pak" Attributes="0" SourcePath="dist\win-unpacked\chrome_200_percent.pak" SelfReg="false"/>
+    <ROW File="d3dcompiler_47.dll" Component_="d3dcompiler_47.dll" FileName="D3DCOM~1.DLL|d3dcompiler_47.dll" Attributes="0" SourcePath="dist\win-unpacked\d3dcompiler_47.dll" SelfReg="false"/>
+    <ROW File="E9passManager.exe" Component_="E9passManager.exe" FileName="E9PASS~1.EXE|E9pass Manager.exe" Attributes="0" SourcePath="dist\win-unpacked\E9pass Manager.exe" SelfReg="false" DigSign="true"/>
+    <ROW File="ffmpeg.dll" Component_="ffmpeg.dll" FileName="ffmpeg.dll" Attributes="0" SourcePath="dist\win-unpacked\ffmpeg.dll" SelfReg="false"/>
+    <ROW File="icudtl.dat" Component_="chrome_100_percent.pak" FileName="icudtl.dat" Attributes="0" SourcePath="dist\win-unpacked\icudtl.dat" SelfReg="false"/>
+    <ROW File="libEGL.dll" Component_="libEGL.dll" FileName="libEGL.dll" Attributes="0" SourcePath="dist\win-unpacked\libEGL.dll" SelfReg="false"/>
+    <ROW File="libGLESv2.dll" Component_="libGLESv2.dll" FileName="LIBGLE~1.DLL|libGLESv2.dll" Attributes="0" SourcePath="dist\win-unpacked\libGLESv2.dll" SelfReg="false"/>
+    <ROW File="LICENSE.electron.txt" Component_="chrome_100_percent.pak" FileName="LICENS~1.TXT|LICENSE.electron.txt" Attributes="0" SourcePath="dist\win-unpacked\LICENSE.electron.txt" SelfReg="false"/>
+    <ROW File="LICENSES.chromium.html" Component_="chrome_100_percent.pak" FileName="LICENS~1.HTM|LICENSES.chromium.html" Attributes="0" SourcePath="dist\win-unpacked\LICENSES.chromium.html" SelfReg="false"/>
+    <ROW File="resources.pak" Component_="chrome_100_percent.pak" FileName="RESOUR~1.PAK|resources.pak" Attributes="0" SourcePath="dist\win-unpacked\resources.pak" SelfReg="false"/>
+    <ROW File="snapshot_blob.bin" Component_="chrome_100_percent.pak" FileName="SNAPSH~1.BIN|snapshot_blob.bin" Attributes="0" SourcePath="dist\win-unpacked\snapshot_blob.bin" SelfReg="false"/>
+    <ROW File="v8_context_snapshot.bin" Component_="chrome_100_percent.pak" FileName="V8_CON~1.BIN|v8_context_snapshot.bin" Attributes="0" SourcePath="dist\win-unpacked\v8_context_snapshot.bin" SelfReg="false"/>
+    <ROW File="vk_swiftshader.dll" Component_="vk_swiftshader.dll" FileName="VK_SWI~1.DLL|vk_swiftshader.dll" Attributes="0" SourcePath="dist\win-unpacked\vk_swiftshader.dll" SelfReg="false"/>
+    <ROW File="vk_swiftshader_icd.json" Component_="chrome_100_percent.pak" FileName="VK_SWI~1.JSO|vk_swiftshader_icd.json" Attributes="0" SourcePath="dist\win-unpacked\vk_swiftshader_icd.json" SelfReg="false"/>
+    <ROW File="vulkan1.dll" Component_="vulkan1.dll" FileName="vulkan-1.dll" Attributes="0" SourcePath="dist\win-unpacked\vulkan-1.dll" SelfReg="false"/>
+    <ROW File="am.pak" Component_="am.pak" FileName="am.pak" Attributes="0" SourcePath="dist\win-unpacked\locales\am.pak" SelfReg="false"/>
+    <ROW File="ar.pak" Component_="am.pak" FileName="ar.pak" Attributes="0" SourcePath="dist\win-unpacked\locales\ar.pak" SelfReg="false"/>
+    <ROW File="bg.pak" Component_="am.pak" FileName="bg.pak" Attributes="0" SourcePath="dist\win-unpacked\locales\bg.pak" SelfReg="false"/>
+    <ROW File="bn.pak" Component_="am.pak" FileName="bn.pak" Attributes="0" SourcePath="dist\win-unpacked\locales\bn.pak" SelfReg="false"/>
+    <ROW File="ca.pak" Component_="am.pak" FileName="ca.pak" Attributes="0" SourcePath="dist\win-unpacked\locales\ca.pak" SelfReg="false"/>
+    <ROW File="cs.pak" Component_="am.pak" FileName="cs.pak" Attributes="0" SourcePath="dist\win-unpacked\locales\cs.pak" SelfReg="false"/>
+    <ROW File="da.pak" Component_="am.pak" FileName="da.pak" Attributes="0" SourcePath="dist\win-unpacked\locales\da.pak" SelfReg="false"/>
+    <ROW File="de.pak" Component_="am.pak" FileName="de.pak" Attributes="0" SourcePath="dist\win-unpacked\locales\de.pak" SelfReg="false"/>
+    <ROW File="el.pak" Component_="am.pak" FileName="el.pak" Attributes="0" SourcePath="dist\win-unpacked\locales\el.pak" SelfReg="false"/>
+    <ROW File="enGB.pak" Component_="am.pak" FileName="en-GB.pak" Attributes="0" SourcePath="dist\win-unpacked\locales\en-GB.pak" SelfReg="false"/>
+    <ROW File="enUS.pak" Component_="am.pak" FileName="en-US.pak" Attributes="0" SourcePath="dist\win-unpacked\locales\en-US.pak" SelfReg="false"/>
+    <ROW File="es419.pak" Component_="am.pak" FileName="es-419.pak" Attributes="0" SourcePath="dist\win-unpacked\locales\es-419.pak" SelfReg="false"/>
+    <ROW File="es.pak" Component_="am.pak" FileName="es.pak" Attributes="0" SourcePath="dist\win-unpacked\locales\es.pak" SelfReg="false"/>
+    <ROW File="et.pak" Component_="am.pak" FileName="et.pak" Attributes="0" SourcePath="dist\win-unpacked\locales\et.pak" SelfReg="false"/>
+    <ROW File="fa.pak" Component_="am.pak" FileName="fa.pak" Attributes="0" SourcePath="dist\win-unpacked\locales\fa.pak" SelfReg="false"/>
+    <ROW File="fi.pak" Component_="am.pak" FileName="fi.pak" Attributes="0" SourcePath="dist\win-unpacked\locales\fi.pak" SelfReg="false"/>
+    <ROW File="fil.pak" Component_="am.pak" FileName="fil.pak" Attributes="0" SourcePath="dist\win-unpacked\locales\fil.pak" SelfReg="false"/>
+    <ROW File="fr.pak" Component_="am.pak" FileName="fr.pak" Attributes="0" SourcePath="dist\win-unpacked\locales\fr.pak" SelfReg="false"/>
+    <ROW File="gu.pak" Component_="am.pak" FileName="gu.pak" Attributes="0" SourcePath="dist\win-unpacked\locales\gu.pak" SelfReg="false"/>
+    <ROW File="he.pak" Component_="am.pak" FileName="he.pak" Attributes="0" SourcePath="dist\win-unpacked\locales\he.pak" SelfReg="false"/>
+    <ROW File="hi.pak" Component_="am.pak" FileName="hi.pak" Attributes="0" SourcePath="dist\win-unpacked\locales\hi.pak" SelfReg="false"/>
+    <ROW File="hr.pak" Component_="am.pak" FileName="hr.pak" Attributes="0" SourcePath="dist\win-unpacked\locales\hr.pak" SelfReg="false"/>
+    <ROW File="hu.pak" Component_="am.pak" FileName="hu.pak" Attributes="0" SourcePath="dist\win-unpacked\locales\hu.pak" SelfReg="false"/>
+    <ROW File="id.pak" Component_="am.pak" FileName="id.pak" Attributes="0" SourcePath="dist\win-unpacked\locales\id.pak" SelfReg="false"/>
+    <ROW File="it.pak" Component_="am.pak" FileName="it.pak" Attributes="0" SourcePath="dist\win-unpacked\locales\it.pak" SelfReg="false"/>
+    <ROW File="ja.pak" Component_="am.pak" FileName="ja.pak" Attributes="0" SourcePath="dist\win-unpacked\locales\ja.pak" SelfReg="false"/>
+    <ROW File="kn.pak" Component_="am.pak" FileName="kn.pak" Attributes="0" SourcePath="dist\win-unpacked\locales\kn.pak" SelfReg="false"/>
+    <ROW File="ko.pak" Component_="am.pak" FileName="ko.pak" Attributes="0" SourcePath="dist\win-unpacked\locales\ko.pak" SelfReg="false"/>
+    <ROW File="lt.pak" Component_="am.pak" FileName="lt.pak" Attributes="0" SourcePath="dist\win-unpacked\locales\lt.pak" SelfReg="false"/>
+    <ROW File="lv.pak" Component_="am.pak" FileName="lv.pak" Attributes="0" SourcePath="dist\win-unpacked\locales\lv.pak" SelfReg="false"/>
+    <ROW File="ml.pak" Component_="am.pak" FileName="ml.pak" Attributes="0" SourcePath="dist\win-unpacked\locales\ml.pak" SelfReg="false"/>
+    <ROW File="mr.pak" Component_="am.pak" FileName="mr.pak" Attributes="0" SourcePath="dist\win-unpacked\locales\mr.pak" SelfReg="false"/>
+    <ROW File="ms.pak" Component_="am.pak" FileName="ms.pak" Attributes="0" SourcePath="dist\win-unpacked\locales\ms.pak" SelfReg="false"/>
+    <ROW File="nb.pak" Component_="am.pak" FileName="nb.pak" Attributes="0" SourcePath="dist\win-unpacked\locales\nb.pak" SelfReg="false"/>
+    <ROW File="nl.pak" Component_="am.pak" FileName="nl.pak" Attributes="0" SourcePath="dist\win-unpacked\locales\nl.pak" SelfReg="false"/>
+    <ROW File="pl.pak" Component_="am.pak" FileName="pl.pak" Attributes="0" SourcePath="dist\win-unpacked\locales\pl.pak" SelfReg="false"/>
+    <ROW File="ptBR.pak" Component_="am.pak" FileName="pt-BR.pak" Attributes="0" SourcePath="dist\win-unpacked\locales\pt-BR.pak" SelfReg="false"/>
+    <ROW File="ptPT.pak" Component_="am.pak" FileName="pt-PT.pak" Attributes="0" SourcePath="dist\win-unpacked\locales\pt-PT.pak" SelfReg="false"/>
+    <ROW File="ro.pak" Component_="am.pak" FileName="ro.pak" Attributes="0" SourcePath="dist\win-unpacked\locales\ro.pak" SelfReg="false"/>
+    <ROW File="ru.pak" Component_="am.pak" FileName="ru.pak" Attributes="0" SourcePath="dist\win-unpacked\locales\ru.pak" SelfReg="false"/>
+    <ROW File="sk.pak" Component_="am.pak" FileName="sk.pak" Attributes="0" SourcePath="dist\win-unpacked\locales\sk.pak" SelfReg="false"/>
+    <ROW File="sl.pak" Component_="am.pak" FileName="sl.pak" Attributes="0" SourcePath="dist\win-unpacked\locales\sl.pak" SelfReg="false"/>
+    <ROW File="sr.pak" Component_="am.pak" FileName="sr.pak" Attributes="0" SourcePath="dist\win-unpacked\locales\sr.pak" SelfReg="false"/>
+    <ROW File="sv.pak" Component_="am.pak" FileName="sv.pak" Attributes="0" SourcePath="dist\win-unpacked\locales\sv.pak" SelfReg="false"/>
+    <ROW File="sw.pak" Component_="am.pak" FileName="sw.pak" Attributes="0" SourcePath="dist\win-unpacked\locales\sw.pak" SelfReg="false"/>
+    <ROW File="ta.pak" Component_="am.pak" FileName="ta.pak" Attributes="0" SourcePath="dist\win-unpacked\locales\ta.pak" SelfReg="false"/>
+    <ROW File="te.pak" Component_="am.pak" FileName="te.pak" Attributes="0" SourcePath="dist\win-unpacked\locales\te.pak" SelfReg="false"/>
+    <ROW File="th.pak" Component_="am.pak" FileName="th.pak" Attributes="0" SourcePath="dist\win-unpacked\locales\th.pak" SelfReg="false"/>
+    <ROW File="tr.pak" Component_="am.pak" FileName="tr.pak" Attributes="0" SourcePath="dist\win-unpacked\locales\tr.pak" SelfReg="false"/>
+    <ROW File="uk.pak" Component_="am.pak" FileName="uk.pak" Attributes="0" SourcePath="dist\win-unpacked\locales\uk.pak" SelfReg="false"/>
+    <ROW File="vi.pak" Component_="am.pak" FileName="vi.pak" Attributes="0" SourcePath="dist\win-unpacked\locales\vi.pak" SelfReg="false"/>
+    <ROW File="zhCN.pak" Component_="am.pak" FileName="zh-CN.pak" Attributes="0" SourcePath="dist\win-unpacked\locales\zh-CN.pak" SelfReg="false"/>
+    <ROW File="zhTW.pak" Component_="am.pak" FileName="zh-TW.pak" Attributes="0" SourcePath="dist\win-unpacked\locales\zh-TW.pak" SelfReg="false"/>
+    <ROW File="fileApi.exe" Component_="fileApi.exe" FileName="fileApi.exe" Attributes="0" SourcePath="dist\win-unpacked\resources\app\dist-python\fileApi.exe" SelfReg="false" DigSign="true"/>
+    <ROW File="icon.png" Component_="icon.png" FileName="icon.png" Attributes="0" SourcePath="dist\win-unpacked\resources\app\icon.png" SelfReg="false"/>
+    <ROW File="index.js" Component_="index.js" FileName="index.js" Attributes="0" SourcePath="dist\win-unpacked\resources\app\node_modules\duplexer\index.js" SelfReg="false"/>
+    <ROW File="LICENCE" Component_="index.js" FileName="LICENCE" Attributes="0" SourcePath="dist\win-unpacked\resources\app\node_modules\duplexer\LICENCE" SelfReg="false"/>
+    <ROW File="package.json" Component_="index.js" FileName="PACKAG~1.JSO|package.json" Attributes="0" SourcePath="dist\win-unpacked\resources\app\node_modules\duplexer\package.json" SelfReg="false"/>
+    <ROW File="index.js_1" Component_="index.js_1" FileName="index.js" Attributes="0" SourcePath="dist\win-unpacked\resources\app\node_modules\event-stream\index.js" SelfReg="false"/>
+    <ROW File="LICENCE_1" Component_="index.js_1" FileName="LICENCE" Attributes="0" SourcePath="dist\win-unpacked\resources\app\node_modules\event-stream\LICENCE" SelfReg="false"/>
+    <ROW File="package.json_1" Component_="index.js_1" FileName="PACKAG~1.JSO|package.json" Attributes="0" SourcePath="dist\win-unpacked\resources\app\node_modules\event-stream\package.json" SelfReg="false"/>
+    <ROW File="index.js_2" Component_="index.js_2" FileName="index.js" Attributes="0" SourcePath="dist\win-unpacked\resources\app\node_modules\from\index.js" SelfReg="false"/>
+    <ROW File="LICENSE.APACHE2" Component_="index.js_2" FileName="LICENS~1.APA|LICENSE.APACHE2" Attributes="0" SourcePath="dist\win-unpacked\resources\app\node_modules\from\LICENSE.APACHE2" SelfReg="false"/>
+    <ROW File="LICENSE.MIT" Component_="index.js_2" FileName="LICENSE.MIT" Attributes="0" SourcePath="dist\win-unpacked\resources\app\node_modules\from\LICENSE.MIT" SelfReg="false"/>
+    <ROW File="package.json_2" Component_="index.js_2" FileName="PACKAG~1.JSO|package.json" Attributes="0" SourcePath="dist\win-unpacked\resources\app\node_modules\from\package.json" SelfReg="false"/>
+    <ROW File="index.js_3" Component_="index.js_3" FileName="index.js" Attributes="0" SourcePath="dist\win-unpacked\resources\app\node_modules\map-stream\index.js" SelfReg="false"/>
+    <ROW File="LICENCE_2" Component_="index.js_3" FileName="LICENCE" Attributes="0" SourcePath="dist\win-unpacked\resources\app\node_modules\map-stream\LICENCE" SelfReg="false"/>
+    <ROW File="package.json_3" Component_="index.js_3" FileName="PACKAG~1.JSO|package.json" Attributes="0" SourcePath="dist\win-unpacked\resources\app\node_modules\map-stream\package.json" SelfReg="false"/>
+    <ROW File="index.js_4" Component_="index.js_4" FileName="index.js" Attributes="0" SourcePath="dist\win-unpacked\resources\app\node_modules\pause-stream\index.js" SelfReg="false"/>
+    <ROW File="LICENSE" Component_="index.js_4" FileName="LICENSE" Attributes="0" SourcePath="dist\win-unpacked\resources\app\node_modules\pause-stream\LICENSE" SelfReg="false"/>
+    <ROW File="package.json_4" Component_="index.js_4" FileName="PACKAG~1.JSO|package.json" Attributes="0" SourcePath="dist\win-unpacked\resources\app\node_modules\pause-stream\package.json" SelfReg="false"/>
+    <ROW File="pstree.js" Component_="pstree.js" FileName="ps-tree.js" Attributes="0" SourcePath="dist\win-unpacked\resources\app\node_modules\ps-tree\bin\ps-tree.js" SelfReg="false"/>
+    <ROW File="index.js_5" Component_="index.js_5" FileName="index.js" Attributes="0" SourcePath="dist\win-unpacked\resources\app\node_modules\ps-tree\index.js" SelfReg="false"/>
+    <ROW File="LICENSE_1" Component_="index.js_5" FileName="LICENSE" Attributes="0" SourcePath="dist\win-unpacked\resources\app\node_modules\ps-tree\LICENSE" SelfReg="false"/>
+    <ROW File="package.json_5" Component_="index.js_5" FileName="PACKAG~1.JSO|package.json" Attributes="0" SourcePath="dist\win-unpacked\resources\app\node_modules\ps-tree\package.json" SelfReg="false"/>
+    <ROW File="index.js_6" Component_="index.js_6" FileName="index.js" Attributes="0" SourcePath="dist\win-unpacked\resources\app\node_modules\split\index.js" SelfReg="false"/>
+    <ROW File="LICENCE_3" Component_="index.js_6" FileName="LICENCE" Attributes="0" SourcePath="dist\win-unpacked\resources\app\node_modules\split\LICENCE" SelfReg="false"/>
+    <ROW File="package.json_6" Component_="index.js_6" FileName="PACKAG~1.JSO|package.json" Attributes="0" SourcePath="dist\win-unpacked\resources\app\node_modules\split\package.json" SelfReg="false"/>
+    <ROW File="index.js_7" Component_="index.js_7" FileName="index.js" Attributes="0" SourcePath="dist\win-unpacked\resources\app\node_modules\stream-combiner\index.js" SelfReg="false"/>
+    <ROW File="LICENSE_2" Component_="index.js_7" FileName="LICENSE" Attributes="0" SourcePath="dist\win-unpacked\resources\app\node_modules\stream-combiner\LICENSE" SelfReg="false"/>
+    <ROW File="package.json_7" Component_="index.js_7" FileName="PACKAG~1.JSO|package.json" Attributes="0" SourcePath="dist\win-unpacked\resources\app\node_modules\stream-combiner\package.json" SelfReg="false"/>
+    <ROW File="index.js_8" Component_="index.js_8" FileName="index.js" Attributes="0" SourcePath="dist\win-unpacked\resources\app\node_modules\through\index.js" SelfReg="false"/>
+    <ROW File="LICENSE.APACHE2_1" Component_="index.js_8" FileName="LICENS~1.APA|LICENSE.APACHE2" Attributes="0" SourcePath="dist\win-unpacked\resources\app\node_modules\through\LICENSE.APACHE2" SelfReg="false"/>
+    <ROW File="LICENSE.MIT_1" Component_="index.js_8" FileName="LICENSE.MIT" Attributes="0" SourcePath="dist\win-unpacked\resources\app\node_modules\through\LICENSE.MIT" SelfReg="false"/>
+    <ROW File="package.json_8" Component_="index.js_8" FileName="PACKAG~1.JSO|package.json" Attributes="0" SourcePath="dist\win-unpacked\resources\app\node_modules\through\package.json" SelfReg="false"/>
+    <ROW File="package.json_9" Component_="icon.png" FileName="PACKAG~1.JSO|package.json" Attributes="0" SourcePath="dist\win-unpacked\resources\app\package.json" SelfReg="false"/>
+    <ROW File="renderer.js" Component_="icon.png" FileName="renderer.js" Attributes="0" SourcePath="dist\win-unpacked\resources\app\renderer.js" SelfReg="false"/>
+    <ROW File="last_build_id" Component_="last_build_id" FileName="LAST_B~1|.last_build_id" Attributes="0" SourcePath="dist\win-unpacked\resources\app\web\.last_build_id" SelfReg="false"/>
+    <ROW File="AssetManifest.json" Component_="AssetManifest.json" FileName="ASSETM~1.JSO|AssetManifest.json" Attributes="0" SourcePath="dist\win-unpacked\resources\app\web\assets\AssetManifest.json" SelfReg="false"/>
+    <ROW File="FontManifest.json" Component_="AssetManifest.json" FileName="FONTMA~1.JSO|FontManifest.json" Attributes="0" SourcePath="dist\win-unpacked\resources\app\web\assets\FontManifest.json" SelfReg="false"/>
+    <ROW File="MaterialIconsRegular.ttf" Component_="MaterialIconsRegular.ttf" FileName="MATERI~1.TTF|MaterialIcons-Regular.ttf" Attributes="0" SourcePath="dist\win-unpacked\resources\app\web\assets\fonts\MaterialIcons-Regular.ttf" SelfReg="false"/>
+    <ROW File="jpg" Component_="jpg" FileName="0001.jpg" Attributes="0" SourcePath="dist\win-unpacked\resources\app\web\assets\images\0001.jpg" SelfReg="false"/>
+    <ROW File="jpg_1" Component_="jpg" FileName="0002.jpg" Attributes="0" SourcePath="dist\win-unpacked\resources\app\web\assets\images\0002.jpg" SelfReg="false"/>
+    <ROW File="jpg_2" Component_="jpg" FileName="0003.jpg" Attributes="0" SourcePath="dist\win-unpacked\resources\app\web\assets\images\0003.jpg" SelfReg="false"/>
+    <ROW File="jpg_3" Component_="jpg" FileName="0004.jpg" Attributes="0" SourcePath="dist\win-unpacked\resources\app\web\assets\images\0004.jpg" SelfReg="false"/>
+    <ROW File="jpg_4" Component_="jpg" FileName="0005.jpg" Attributes="0" SourcePath="dist\win-unpacked\resources\app\web\assets\images\0005.jpg" SelfReg="false"/>
+    <ROW File="jpg_5" Component_="jpg" FileName="0006.jpg" Attributes="0" SourcePath="dist\win-unpacked\resources\app\web\assets\images\0006.jpg" SelfReg="false"/>
+    <ROW File="jpg_6" Component_="jpg" FileName="0007.jpg" Attributes="0" SourcePath="dist\win-unpacked\resources\app\web\assets\images\0007.jpg" SelfReg="false"/>
+    <ROW File="jpg_7" Component_="jpg" FileName="0008.jpg" Attributes="0" SourcePath="dist\win-unpacked\resources\app\web\assets\images\0008.jpg" SelfReg="false"/>
+    <ROW File="jpg_8" Component_="jpg" FileName="0009.jpg" Attributes="0" SourcePath="dist\win-unpacked\resources\app\web\assets\images\0009.jpg" SelfReg="false"/>
+    <ROW File="jpg_9" Component_="jpg" FileName="0010.jpg" Attributes="0" SourcePath="dist\win-unpacked\resources\app\web\assets\images\0010.jpg" SelfReg="false"/>
+    <ROW File="jpg_10" Component_="jpg" FileName="0011.jpg" Attributes="0" SourcePath="dist\win-unpacked\resources\app\web\assets\images\0011.jpg" SelfReg="false"/>
+    <ROW File="e9payLogo.png" Component_="jpg" FileName="E9PAYL~1.PNG|e9payLogo.png" Attributes="0" SourcePath="dist\win-unpacked\resources\app\web\assets\images\e9payLogo.png" SelfReg="false"/>
+    <ROW File="NOTICES" Component_="AssetManifest.json" FileName="NOTICES" Attributes="0" SourcePath="dist\win-unpacked\resources\app\web\assets\NOTICES" SelfReg="false"/>
+    <ROW File="error.flr" Component_="error.flr" FileName="error.flr" Attributes="0" SourcePath="dist\win-unpacked\resources\app\web\assets\packages\awesome_dialog\assets\flare\error.flr" SelfReg="false"/>
+    <ROW File="error_without_loop.flr" Component_="error.flr" FileName="ERROR_~1.FLR|error_without_loop.flr" Attributes="0" SourcePath="dist\win-unpacked\resources\app\web\assets\packages\awesome_dialog\assets\flare\error_without_loop.flr" SelfReg="false"/>
+    <ROW File="info.flr" Component_="error.flr" FileName="info.flr" Attributes="0" SourcePath="dist\win-unpacked\resources\app\web\assets\packages\awesome_dialog\assets\flare\info.flr" SelfReg="false"/>
+    <ROW File="info_without_loop.flr" Component_="error.flr" FileName="INFO_W~1.FLR|info_without_loop.flr" Attributes="0" SourcePath="dist\win-unpacked\resources\app\web\assets\packages\awesome_dialog\assets\flare\info_without_loop.flr" SelfReg="false"/>
+    <ROW File="succes.flr" Component_="error.flr" FileName="succes.flr" Attributes="0" SourcePath="dist\win-unpacked\resources\app\web\assets\packages\awesome_dialog\assets\flare\succes.flr" SelfReg="false"/>
+    <ROW File="succes_without_loop.flr" Component_="error.flr" FileName="SUCCES~1.FLR|succes_without_loop.flr" Attributes="0" SourcePath="dist\win-unpacked\resources\app\web\assets\packages\awesome_dialog\assets\flare\succes_without_loop.flr" SelfReg="false"/>
+    <ROW File="warning.flr" Component_="error.flr" FileName="warning.flr" Attributes="0" SourcePath="dist\win-unpacked\resources\app\web\assets\packages\awesome_dialog\assets\flare\warning.flr" SelfReg="false"/>
+    <ROW File="warning_without_loop.flr" Component_="error.flr" FileName="WARNIN~1.FLR|warning_without_loop.flr" Attributes="0" SourcePath="dist\win-unpacked\resources\app\web\assets\packages\awesome_dialog\assets\flare\warning_without_loop.flr" SelfReg="false"/>
+    <ROW File="CupertinoIcons.ttf" Component_="CupertinoIcons.ttf" FileName="CUPERT~1.TTF|CupertinoIcons.ttf" Attributes="0" SourcePath="dist\win-unpacked\resources\app\web\assets\packages\cupertino_icons\assets\CupertinoIcons.ttf" SelfReg="false"/>
+    <ROW File="favicon.png" Component_="last_build_id" FileName="favicon.png" Attributes="0" SourcePath="dist\win-unpacked\resources\app\web\favicon.png" SelfReg="false"/>
+    <ROW File="flutter_service_worker.js" Component_="last_build_id" FileName="FLUTTE~1.JS|flutter_service_worker.js" Attributes="0" SourcePath="dist\win-unpacked\resources\app\web\flutter_service_worker.js" SelfReg="false"/>
+    <ROW File="Icon192.png" Component_="Icon192.png" FileName="Icon-192.png" Attributes="0" SourcePath="dist\win-unpacked\resources\app\web\icons\Icon-192.png" SelfReg="false"/>
+    <ROW File="Icon512.png" Component_="Icon192.png" FileName="Icon-512.png" Attributes="0" SourcePath="dist\win-unpacked\resources\app\web\icons\Icon-512.png" SelfReg="false"/>
+    <ROW File="index.html" Component_="last_build_id" FileName="INDEX~1.HTM|index.html" Attributes="0" SourcePath="dist\win-unpacked\resources\app\web\index.html" SelfReg="false"/>
+    <ROW File="main.dart.js" Component_="last_build_id" FileName="MAINDA~1.JS|main.dart.js" Attributes="0" SourcePath="dist\win-unpacked\resources\app\web\main.dart.js" SelfReg="false"/>
+    <ROW File="main.dart.js.map" Component_="last_build_id" FileName="MAINDA~1.MAP|main.dart.js.map" Attributes="0" SourcePath="dist\win-unpacked\resources\app\web\main.dart.js.map" SelfReg="false"/>
+    <ROW File="manifest.json" Component_="last_build_id" FileName="MANIFE~1.JSO|manifest.json" Attributes="0" SourcePath="dist\win-unpacked\resources\app\web\manifest.json" SelfReg="false"/>
+    <ROW File="elevate.exe" Component_="elevate.exe" FileName="elevate.exe" Attributes="0" SourcePath="dist\win-unpacked\resources\elevate.exe" SelfReg="false" DigSign="true"/>
+    <ROW File="libEGL.dll_1" Component_="libEGL.dll_1" FileName="libEGL.dll" Attributes="0" SourcePath="dist\win-unpacked\swiftshader\libEGL.dll" SelfReg="false"/>
+    <ROW File="libGLESv2.dll_1" Component_="libGLESv2.dll_1" FileName="LIBGLE~1.DLL|libGLESv2.dll" Attributes="0" SourcePath="dist\win-unpacked\swiftshader\libGLESv2.dll" SelfReg="false"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.BootstrOptComponent">
+    <ROW BootstrOptKey="GlobalOptions" DownloadFolder="[AppDataFolder][|Manufacturer]\[|ProductName]\prerequisites" Options="2"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.BuildComponent">
+    <ROW BuildKey="DefaultBuild" BuildName="DefaultBuild" BuildOrder="1" BuildType="1" PackageFolder="installer" PackageFileName="E9pass Manager x86 (32 bit)" Languages="en" InstallationType="4" CabsLocation="1" PackageType="1" FilesInsideExe="true" ExeIconPath="icon.ico" ExtractionFolder="[AppDataFolder][|Manufacturer]\[|ProductName] [|ProductVersion]\install" UseLargeSchema="true" ExeName="E9pass Manager x86 (32 bit)"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.DictionaryComponent">
+    <ROW Path="&lt;AI_DICTS&gt;ui.ail"/>
+    <ROW Path="&lt;AI_DICTS&gt;ui_en.ail"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.FragmentComponent">
+    <ROW Fragment="CommonUI.aip" Path="&lt;AI_FRAGS&gt;CommonUI.aip"/>
+    <ROW Fragment="FolderDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\FolderDlg.aip"/>
+    <ROW Fragment="MaintenanceTypeDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\MaintenanceTypeDlg.aip"/>
+    <ROW Fragment="MaintenanceWelcomeDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\MaintenanceWelcomeDlg.aip"/>
+    <ROW Fragment="SequenceDialogs.aip" Path="&lt;AI_THEMES&gt;classic\fragments\SequenceDialogs.aip"/>
+    <ROW Fragment="Sequences.aip" Path="&lt;AI_FRAGS&gt;Sequences.aip"/>
+    <ROW Fragment="StaticUIStrings.aip" Path="&lt;AI_FRAGS&gt;StaticUIStrings.aip"/>
+    <ROW Fragment="UI.aip" Path="&lt;AI_THEMES&gt;classic\fragments\UI.aip"/>
+    <ROW Fragment="Validation.aip" Path="&lt;AI_FRAGS&gt;Validation.aip"/>
+    <ROW Fragment="VerifyRemoveDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\VerifyRemoveDlg.aip"/>
+    <ROW Fragment="VerifyRepairDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\VerifyRepairDlg.aip"/>
+    <ROW Fragment="WelcomeDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\WelcomeDlg.aip"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiActionTextComponent">
+    <ROW Action="AI_DeleteLzma" Description="Deleting files extracted from archive" DescriptionLocId="ActionText.Description.AI_DeleteLzma" TemplateLocId="-"/>
+    <ROW Action="AI_DeleteRLzma" Description="Deleting files extracted from archive" DescriptionLocId="ActionText.Description.AI_DeleteLzma" TemplateLocId="-"/>
+    <ROW Action="AI_ExtractFiles" Description="Extracting files from archive" DescriptionLocId="ActionText.Description.AI_ExtractLzma" TemplateLocId="-"/>
+    <ROW Action="AI_ExtractLzma" Description="Extracting files from archive" DescriptionLocId="ActionText.Description.AI_ExtractLzma" TemplateLocId="-"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiAppSearchComponent">
+    <ROW Property="AI_SETUPEXEPATH" Signature_="AI_EXE_PATH_LM" Builds="DefaultBuild"/>
+    <ROW Property="AI_SETUPEXEPATH" Signature_="AI_EXE_PATH_CU" Builds="DefaultBuild"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiBinaryComponent">
+    <ROW Name="Prereq.dll" SourcePath="&lt;AI_CUSTACTS&gt;Prereq.dll"/>
+    <ROW Name="aicustact.dll" SourcePath="&lt;AI_CUSTACTS&gt;aicustact.dll"/>
+    <ROW Name="logo_bg.jpg" SourcePath="installer_assets\logo_bg.jpg"/>
+    <ROW Name="logo_bg_banner.jpg" SourcePath="installer_assets\logo_bg_banner.jpg"/>
+    <ROW Name="lzmaextractor.dll" SourcePath="&lt;AI_CUSTACTS&gt;lzmaextractor.dll"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiControlEventComponent">
+    <ROW Dialog_="WelcomeDlg" Control_="Next" Event="NewDialog" Argument="FolderDlg" Condition="AI_INSTALL" Ordering="1"/>
+    <ROW Dialog_="FolderDlg" Control_="Next" Event="NewDialog" Argument="VerifyReadyDlg" Condition="AI_INSTALL" Ordering="201"/>
+    <ROW Dialog_="FolderDlg" Control_="Back" Event="NewDialog" Argument="WelcomeDlg" Condition="AI_INSTALL" Ordering="1"/>
+    <ROW Dialog_="MaintenanceWelcomeDlg" Control_="Next" Event="NewDialog" Argument="MaintenanceTypeDlg" Condition="AI_MAINT" Ordering="99"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Install" Event="EndDialog" Argument="Return" Condition="AI_MAINT" Ordering="198"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Back" Event="NewDialog" Argument="CustomizeDlg" Condition="AI_MAINT" Ordering="202"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Install" Event="EndDialog" Argument="Return" Condition="AI_INSTALL" Ordering="197"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Back" Event="NewDialog" Argument="FolderDlg" Condition="AI_INSTALL" Ordering="201"/>
+    <ROW Dialog_="CustomizeDlg" Control_="Next" Event="NewDialog" Argument="VerifyReadyDlg" Condition="AI_MAINT" Ordering="101"/>
+    <ROW Dialog_="CustomizeDlg" Control_="Back" Event="NewDialog" Argument="MaintenanceTypeDlg" Condition="AI_MAINT" Ordering="1"/>
+    <ROW Dialog_="MaintenanceTypeDlg" Control_="ChangeButton" Event="NewDialog" Argument="CustomizeDlg" Condition="AI_MAINT" Ordering="501"/>
+    <ROW Dialog_="MaintenanceTypeDlg" Control_="Back" Event="NewDialog" Argument="MaintenanceWelcomeDlg" Condition="AI_MAINT" Ordering="1"/>
+    <ROW Dialog_="MaintenanceTypeDlg" Control_="RemoveButton" Event="NewDialog" Argument="VerifyRemoveDlg" Condition="AI_MAINT AND InstallMode=&quot;Remove&quot;" Ordering="601"/>
+    <ROW Dialog_="VerifyRemoveDlg" Control_="Back" Event="NewDialog" Argument="MaintenanceTypeDlg" Condition="AI_MAINT AND InstallMode=&quot;Remove&quot;" Ordering="1"/>
+    <ROW Dialog_="MaintenanceTypeDlg" Control_="RepairButton" Event="NewDialog" Argument="VerifyRepairDlg" Condition="AI_MAINT AND InstallMode=&quot;Repair&quot;" Ordering="601"/>
+    <ROW Dialog_="VerifyRepairDlg" Control_="Back" Event="NewDialog" Argument="MaintenanceTypeDlg" Condition="AI_MAINT AND InstallMode=&quot;Repair&quot;" Ordering="1"/>
+    <ROW Dialog_="VerifyRepairDlg" Control_="Repair" Event="EndDialog" Argument="Return" Condition="AI_MAINT AND InstallMode=&quot;Repair&quot;" Ordering="399" Options="1"/>
+    <ROW Dialog_="VerifyRemoveDlg" Control_="Remove" Event="EndDialog" Argument="Return" Condition="AI_MAINT AND InstallMode=&quot;Remove&quot;" Ordering="299" Options="1"/>
+    <ROW Dialog_="PatchWelcomeDlg" Control_="Next" Event="NewDialog" Argument="VerifyReadyDlg" Condition="AI_PATCH" Ordering="201"/>
+    <ROW Dialog_="ResumeDlg" Control_="Install" Event="EndDialog" Argument="Return" Condition="AI_RESUME" Ordering="299"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Install" Event="EndDialog" Argument="Return" Condition="AI_PATCH" Ordering="199"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Back" Event="NewDialog" Argument="PatchWelcomeDlg" Condition="AI_PATCH" Ordering="203"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiCreateFolderComponent">
+    <ROW Directory_="APPDIR" Component_="APPDIR" ManualDelete="true"/>
+    <ROW Directory_="SHORTCUTDIR" Component_="SHORTCUTDIR" ManualDelete="false"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiCustActComponent">
+    <ROW Action="AI_BACKUP_AI_SETUPEXEPATH" Type="51" Source="AI_SETUPEXEPATH_ORIGINAL" Target="[AI_SETUPEXEPATH]"/>
+    <ROW Action="AI_DATA_SETTER" Type="51" Source="AI_ExtractFiles" Target="[AI_SETUPEXEPATH]"/>
+    <ROW Action="AI_DOWNGRADE" Type="19" Target="4010"/>
+    <ROW Action="AI_DeleteCadLzma" Type="51" Source="AI_DeleteLzma" Target="[AI_SETUPEXEPATH]"/>
+    <ROW Action="AI_DeleteLzma" Type="1025" Source="lzmaextractor.dll" Target="DeleteLZMAFiles"/>
+    <ROW Action="AI_DeleteRCadLzma" Type="51" Source="AI_DeleteRLzma" Target="[AI_SETUPEXEPATH]"/>
+    <ROW Action="AI_DeleteRLzma" Type="1281" Source="lzmaextractor.dll" Target="DeleteLZMAFiles"/>
+    <ROW Action="AI_DpiContentScale" Type="1" Source="aicustact.dll" Target="DpiContentScale"/>
+    <ROW Action="AI_EnableDebugLog" Type="321" Source="aicustact.dll" Target="EnableDebugLog"/>
+    <ROW Action="AI_EstimateExtractFiles" Type="1" Source="Prereq.dll" Target="EstimateExtractFiles"/>
+    <ROW Action="AI_ExtractCadLzma" Type="51" Source="AI_ExtractLzma" Target="[AI_SETUPEXEPATH]"/>
+    <ROW Action="AI_ExtractFiles" Type="1025" Source="Prereq.dll" Target="ExtractSourceFiles" AdditionalSeq="AI_DATA_SETTER"/>
+    <ROW Action="AI_ExtractLzma" Type="1025" Source="lzmaextractor.dll" Target="ExtractLZMAFiles"/>
+    <ROW Action="AI_FindExeLzma" Type="1" Source="lzmaextractor.dll" Target="FindEXE"/>
+    <ROW Action="AI_InstallModeCheck" Type="1" Source="aicustact.dll" Target="UpdateInstallMode" WithoutSeq="true"/>
+    <ROW Action="AI_LaunchApp" Type="1" Source="aicustact.dll" Target="[#E9passManager.exe]"/>
+    <ROW Action="AI_PREPARE_UPGRADE" Type="65" Source="aicustact.dll" Target="PrepareUpgrade"/>
+    <ROW Action="AI_RESTORE_AI_SETUPEXEPATH" Type="51" Source="AI_SETUPEXEPATH" Target="[AI_SETUPEXEPATH_ORIGINAL]"/>
+    <ROW Action="AI_RESTORE_LOCATION" Type="65" Source="aicustact.dll" Target="RestoreLocation"/>
+    <ROW Action="AI_ResolveKnownFolders" Type="1" Source="aicustact.dll" Target="AI_ResolveKnownFolders"/>
+    <ROW Action="AI_SHOW_LOG" Type="65" Source="aicustact.dll" Target="LaunchLogFile" WithoutSeq="true"/>
+    <ROW Action="AI_STORE_LOCATION" Type="51" Source="ARPINSTALLLOCATION" Target="[APPDIR]"/>
+    <ROW Action="SET_APPDIR" Type="307" Source="APPDIR" Target="[ProgramFilesFolder][Manufacturer]\[ProductName]"/>
+    <ROW Action="SET_SHORTCUTDIR" Type="307" Source="SHORTCUTDIR" Target="[ProgramMenuFolder][ProductName]"/>
+    <ROW Action="SET_TARGETDIR_TO_APPDIR" Type="51" Source="TARGETDIR" Target="[APPDIR]"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiFeatCompsComponent">
+    <ROW Feature_="MainFeature" Component_="APPDIR"/>
+    <ROW Feature_="MainFeature" Component_="ProductInformation"/>
+    <ROW Feature_="MainFeature" Component_="chrome_100_percent.pak"/>
+    <ROW Feature_="MainFeature" Component_="d3dcompiler_47.dll"/>
+    <ROW Feature_="MainFeature" Component_="E9passManager.exe"/>
+    <ROW Feature_="MainFeature" Component_="ffmpeg.dll"/>
+    <ROW Feature_="MainFeature" Component_="libEGL.dll"/>
+    <ROW Feature_="MainFeature" Component_="libGLESv2.dll"/>
+    <ROW Feature_="MainFeature" Component_="vk_swiftshader.dll"/>
+    <ROW Feature_="MainFeature" Component_="vulkan1.dll"/>
+    <ROW Feature_="MainFeature" Component_="am.pak"/>
+    <ROW Feature_="MainFeature" Component_="fileApi.exe"/>
+    <ROW Feature_="MainFeature" Component_="icon.png"/>
+    <ROW Feature_="MainFeature" Component_="index.js"/>
+    <ROW Feature_="MainFeature" Component_="index.js_1"/>
+    <ROW Feature_="MainFeature" Component_="index.js_2"/>
+    <ROW Feature_="MainFeature" Component_="index.js_3"/>
+    <ROW Feature_="MainFeature" Component_="index.js_4"/>
+    <ROW Feature_="MainFeature" Component_="pstree.js"/>
+    <ROW Feature_="MainFeature" Component_="index.js_5"/>
+    <ROW Feature_="MainFeature" Component_="index.js_6"/>
+    <ROW Feature_="MainFeature" Component_="index.js_7"/>
+    <ROW Feature_="MainFeature" Component_="index.js_8"/>
+    <ROW Feature_="MainFeature" Component_="last_build_id"/>
+    <ROW Feature_="MainFeature" Component_="AssetManifest.json"/>
+    <ROW Feature_="MainFeature" Component_="MaterialIconsRegular.ttf"/>
+    <ROW Feature_="MainFeature" Component_="jpg"/>
+    <ROW Feature_="MainFeature" Component_="error.flr"/>
+    <ROW Feature_="MainFeature" Component_="CupertinoIcons.ttf"/>
+    <ROW Feature_="MainFeature" Component_="Icon192.png"/>
+    <ROW Feature_="MainFeature" Component_="elevate.exe"/>
+    <ROW Feature_="MainFeature" Component_="SHORTCUTDIR"/>
+    <ROW Feature_="MainFeature" Component_="AI_ExePath"/>
+    <ROW Feature_="MainFeature" Component_="libEGL.dll_1"/>
+    <ROW Feature_="MainFeature" Component_="libGLESv2.dll_1"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiIconsComponent">
+    <ROW Name="icon.exe" SourcePath="icon.ico" Index="0"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiInstExSeqComponent">
+    <ROW Action="AI_DOWNGRADE" Condition="AI_NEWERPRODUCTFOUND AND (UILevel &lt;&gt; 5)" Sequence="210"/>
+    <ROW Action="AI_RESTORE_LOCATION" Condition="APPDIR=&quot;&quot;" Sequence="749"/>
+    <ROW Action="AI_STORE_LOCATION" Condition="(Not Installed) OR REINSTALL" Sequence="1501"/>
+    <ROW Action="AI_PREPARE_UPGRADE" Condition="AI_UPGRADE=&quot;No&quot; AND (Not Installed)" Sequence="1399"/>
+    <ROW Action="AI_ResolveKnownFolders" Sequence="52"/>
+    <ROW Action="AI_EnableDebugLog" Sequence="51"/>
+    <ROW Action="AI_BACKUP_AI_SETUPEXEPATH" Sequence="99" Builds="DefaultBuild"/>
+    <ROW Action="AI_RESTORE_AI_SETUPEXEPATH" Condition="AI_SETUPEXEPATH_ORIGINAL" Sequence="101" Builds="DefaultBuild"/>
+    <ROW Action="AI_DeleteCadLzma" Condition="SETUPEXEDIR=&quot;&quot; AND Installed AND (REMOVE&lt;&gt;&quot;ALL&quot;) AND (AI_INSTALL_MODE&lt;&gt;&quot;Remove&quot;) AND (NOT PATCH)" Sequence="199" Builds="DefaultBuild"/>
+    <ROW Action="AI_DeleteRCadLzma" Condition="SETUPEXEDIR=&quot;&quot; AND Installed AND (REMOVE&lt;&gt;&quot;ALL&quot;) AND (AI_INSTALL_MODE&lt;&gt;&quot;Remove&quot;) AND (NOT PATCH)" Sequence="198" Builds="DefaultBuild"/>
+    <ROW Action="AI_ExtractCadLzma" Condition="SETUPEXEDIR=&quot;&quot; AND Installed AND (REMOVE&lt;&gt;&quot;ALL&quot;) AND (AI_INSTALL_MODE&lt;&gt;&quot;Remove&quot;) AND (NOT PATCH)" Sequence="197" Builds="DefaultBuild"/>
+    <ROW Action="AI_FindExeLzma" Condition="SETUPEXEDIR=&quot;&quot; AND Installed AND (REMOVE&lt;&gt;&quot;ALL&quot;) AND (AI_INSTALL_MODE&lt;&gt;&quot;Remove&quot;) AND (NOT PATCH)" Sequence="196" Builds="DefaultBuild"/>
+    <ROW Action="AI_ExtractLzma" Condition="SETUPEXEDIR=&quot;&quot; AND Installed AND (REMOVE&lt;&gt;&quot;ALL&quot;) AND (AI_INSTALL_MODE&lt;&gt;&quot;Remove&quot;) AND (NOT PATCH)" Sequence="1549" Builds="DefaultBuild"/>
+    <ROW Action="AI_DeleteRLzma" Condition="SETUPEXEDIR=&quot;&quot; AND Installed AND (REMOVE&lt;&gt;&quot;ALL&quot;) AND (AI_INSTALL_MODE&lt;&gt;&quot;Remove&quot;) AND (NOT PATCH)" Sequence="1548" Builds="DefaultBuild"/>
+    <ROW Action="AI_DeleteLzma" Condition="SETUPEXEDIR=&quot;&quot; AND Installed AND (REMOVE&lt;&gt;&quot;ALL&quot;) AND (AI_INSTALL_MODE&lt;&gt;&quot;Remove&quot;) AND (NOT PATCH)" Sequence="6599" Builds="DefaultBuild"/>
+    <ROW Action="AI_ExtractFiles" Sequence="3998" Builds="DefaultBuild"/>
+    <ROW Action="AI_DATA_SETTER" Sequence="3997"/>
+    <ROW Action="AI_EstimateExtractFiles" Sequence="3999" Builds="DefaultBuild"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiInstallUISequenceComponent">
+    <ROW Action="AI_RESTORE_LOCATION" Condition="APPDIR=&quot;&quot;" Sequence="749"/>
+    <ROW Action="AI_ResolveKnownFolders" Sequence="53"/>
+    <ROW Action="AI_DpiContentScale" Sequence="52"/>
+    <ROW Action="AI_EnableDebugLog" Sequence="51"/>
+    <ROW Action="AI_BACKUP_AI_SETUPEXEPATH" Sequence="99"/>
+    <ROW Action="AI_RESTORE_AI_SETUPEXEPATH" Condition="AI_SETUPEXEPATH_ORIGINAL" Sequence="101"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiLaunchConditionsComponent">
+    <ROW Condition="((VersionNT &lt;&gt; 501) AND (VersionNT &lt;&gt; 502))" Description="[ProductName] cannot be installed on [WindowsTypeNT5XDisplay]." DescriptionLocId="AI.LaunchCondition.NoNT5X" IsPredefined="true" Builds="DefaultBuild"/>
+    <ROW Condition="(VersionNT &lt;&gt; 400)" Description="[ProductName] cannot be installed on [WindowsTypeNT40Display]." DescriptionLocId="AI.LaunchCondition.NoNT40" IsPredefined="true" Builds="DefaultBuild"/>
+    <ROW Condition="(VersionNT &lt;&gt; 500)" Description="[ProductName] cannot be installed on [WindowsTypeNT50Display]." DescriptionLocId="AI.LaunchCondition.NoNT50" IsPredefined="true" Builds="DefaultBuild"/>
+    <ROW Condition="SETUPEXEDIR OR (REMOVE=&quot;ALL&quot;)" Description="This package can only be run from a bootstrapper." DescriptionLocId="AI.LaunchCondition.RequireBootstrapper" IsPredefined="true" Builds="DefaultBuild"/>
+    <ROW Condition="VersionNT" Description="[ProductName] cannot be installed on [WindowsType9XDisplay]." DescriptionLocId="AI.LaunchCondition.No9X" IsPredefined="true" Builds="DefaultBuild"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiRegLocatorComponent">
+    <ROW Signature_="AI_EXE_PATH_CU" Root="1" Key="Software\Caphyon\Advanced Installer\LZMA\[ProductCode]\[ProductVersion]" Name="AI_ExePath" Type="2"/>
+    <ROW Signature_="AI_EXE_PATH_LM" Root="2" Key="Software\Caphyon\Advanced Installer\LZMA\[ProductCode]\[ProductVersion]" Name="AI_ExePath" Type="2"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiRegsComponent">
+    <ROW Registry="AI_ExePath" Root="-1" Key="Software\Caphyon\Advanced Installer\LZMA\[ProductCode]\[ProductVersion]" Name="AI_ExePath" Value="[AI_SETUPEXEPATH]" Component_="AI_ExePath"/>
+    <ROW Registry="Path" Root="-1" Key="Software\[Manufacturer]\[ProductName]" Name="Path" Value="[APPDIR]" Component_="ProductInformation"/>
+    <ROW Registry="Version" Root="-1" Key="Software\[Manufacturer]\[ProductName]" Name="Version" Value="[ProductVersion]" Component_="ProductInformation"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiShortsComponent">
+    <ROW Shortcut="E9passManager" Directory_="SHORTCUTDIR" Name="E9PASS~1|E9pass Manager" Component_="E9passManager.exe" Target="[#E9passManager.exe]" Hotkey="0" Icon_="icon.exe" IconIndex="0" ShowCmd="1" WkDir="APPDIR"/>
+    <ROW Shortcut="E9passManager_1" Directory_="DesktopFolder" Name="E9PASS~1|E9pass Manager" Component_="E9passManager.exe" Target="[#E9passManager.exe]" Hotkey="0" Icon_="icon.exe" IconIndex="0" ShowCmd="1" WkDir="APPDIR"/>
+    <ROW Shortcut="E9passManager_2" Directory_="ProgramMenuFolder" Name="E9PASS~1|E9pass Manager" Component_="E9passManager.exe" Target="[#E9passManager.exe]" Hotkey="0" Icon_="icon.exe" IconIndex="0" ShowCmd="1" WkDir="APPDIR"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiThemeComponent">
+    <ATTRIBUTE name="UsedTheme" value="classic"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiUpgradeComponent">
+    <ROW UpgradeCode="[|UpgradeCode]" VersionMin="0.0.1" VersionMax="[|ProductVersion]" Attributes="257" ActionProperty="OLDPRODUCTS"/>
+    <ROW UpgradeCode="[|UpgradeCode]" VersionMin="[|ProductVersion]" Attributes="2" ActionProperty="AI_NEWERPRODUCTFOUND"/>
+  </COMPONENT>
+</DOCUMENT>

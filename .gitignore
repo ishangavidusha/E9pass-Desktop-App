@@ -39,7 +39,8 @@
 /electron/dist-python
 /electron/dist
 /electron/fileApi.spec
-
+/electron/installer
+/electron/E9pass Manager-cache
 
 
 # Web related
