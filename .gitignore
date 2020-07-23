@@ -41,6 +41,7 @@
 /electron/fileApi.spec
 /electron/installer
 /electron/E9pass Manager-cache
+/electron/web
 
 
 # Web related
