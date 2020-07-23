@@ -33,7 +33,7 @@
         ]
       },
       {
-        "from": "web/",
+        "from": "../build/web/",
         "to": "app/web",
         "filter": [
           "**/*"
