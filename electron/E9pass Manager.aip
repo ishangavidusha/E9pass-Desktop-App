@@ -14,10 +14,10 @@
     <ROW Property="CTRLS" Value="2"/>
     <ROW Property="DialogBitmap" Value="dialog" MultiBuildValue="DefaultBuild:logo_bg.jpg" Type="1" MsiKey="DialogBitmap"/>
     <ROW Property="Manufacturer" Value="E9pay"/>
-    <ROW Property="ProductCode" Value="1033:{0A4E0582-4DC3-4008-9019-13E7FF2B9372} " Type="16"/>
+    <ROW Property="ProductCode" Value="1033:{EE0B9F74-1242-4DE8-8315-3291653E1317} " Type="16"/>
     <ROW Property="ProductLanguage" Value="1033"/>
     <ROW Property="ProductName" Value="E9pass Manager"/>
-    <ROW Property="ProductVersion" Value="1.1.8.0" Type="32" TargetFile="E9passManager.exe"/>
+    <ROW Property="ProductVersion" Value="1.1.9.0" Type="32" TargetFile="E9passManager.exe"/>
     <ROW Property="SecureCustomProperties" Value="OLDPRODUCTS;AI_NEWERPRODUCTFOUND;AI_SETUPEXEPATH;SETUPEXEDIR"/>
     <ROW Property="UpgradeCode" Value="{39056D89-FF42-4039-91FE-3347A220981E}"/>
     <ROW Property="WindowsType9X" MultiBuildValue="DefaultBuild:Windows 9x/ME" ValueLocId="-"/>

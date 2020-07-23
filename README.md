@@ -1,16 +1,42 @@
-# e9pass_desktop
+# E9pass Manager
 
-A new Flutter project.
+[![Build Status](https://travis-ci.org/ishangavidusha/E9pass-Desktop-App.png?branch=master)](https://travis-ci.org/ishangavidusha/E9pass-Desktop-App)
 
-## Getting Started
+This is a windows desktop application for file management
 
-This project is a starting point for a Flutter application.
+![](screenshots/1.JPG)
 
-A few resources to get you started if this is your first Flutter project:
+## Installation
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+Download application from [here](https://github.com/ishangavidusha/E9pass-Desktop-App/releases/tag/v1.1.9) to install E9pass Manager.
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Build
+
+#### Build Flutter
+Install flutter then -
+```
+flutter build web
+```
+Copy all the files from build/web to electron/web
+
+#### Python Modules
+Install all the requirements from -
+```
+requirements.txt
+```
+
+#### Build Electron
+```
+npm init
+npm run package
+```
+
+#### Create Installer
+Download and install [Advanced Installer](https://www.advancedinstaller.com/)
+Then open file - 
+```
+E9pass Manager.aip
+```
+
+## License
+[MIT](https://choosealicense.com/licenses/mit/)
