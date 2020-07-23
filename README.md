@@ -1,6 +1,6 @@
 # E9pass Manager
 
-[![Build Status](https://travis-ci.org/ishangavidusha/E9pass-Desktop-App.png?branch=master)](https://travis-ci.org/ishangavidusha/E9pass-Desktop-App)
+![GitHub repo size](https://img.shields.io/github/repo-size/ishangavidusha/E9pass-Desktop-App) ![GitHub issues](https://img.shields.io/github/issues/ishangavidusha/E9pass-Desktop-App) ![GitHub](https://img.shields.io/github/license/ishangavidusha/E9pass-Desktop-App) ![GitHub release (latest by date including pre-releases)](https://img.shields.io/github/v/release/ishangavidusha/E9pass-Desktop-App?include_prereleases) ![GitHub last commit](https://img.shields.io/github/last-commit/ishangavidusha/E9pass-Desktop-App)
 
 This is a windows desktop application for file management
 
@@ -39,4 +39,4 @@ E9pass Manager.aip
 ```
 
 ## License
-[MIT](https://choosealicense.com/licenses/mit/)
+[MIT](https://github.com/ishangavidusha/E9pass-Desktop-App/blob/master/LICENSE)
