@@ -33,6 +33,7 @@
 
 # dependencies
 /electron/node_modules
+/electron/installer_assets/Gost/
 
 # production
 /electron/build
@@ -42,7 +43,6 @@
 /electron/installer
 /electron/E9pass Manager-cache
 /electron/web
-
 
 # Web related
 lib/generated_plugin_registrant.dart

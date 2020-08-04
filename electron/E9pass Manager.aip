@@ -3,6 +3,7 @@
   <COMPONENT cid="caphyon.advinst.msicomp.MsiPropsComponent">
     <ROW Property="AI_BITMAP_DISPLAY_MODE" Value="0"/>
     <ROW Property="AI_FINDEXE_TITLE" Value="Select the installation package for [|ProductName]" ValueLocId="AI.Property.FindExeTitle"/>
+    <ROW Property="AI_PREDEF_LCONDS_PROPS" Value="AI_DETECTED_INTERNET_CONNECTION"/>
     <ROW Property="ALLUSERS" Value="1"/>
     <ROW Property="ARPCOMMENTS" Value="This installer database contains the logic and data required to install [|ProductName]." ValueLocId="*"/>
     <ROW Property="ARPCONTACT" Value="ishangavidusha@gmail.com"/>
@@ -14,10 +15,10 @@
     <ROW Property="CTRLS" Value="2"/>
     <ROW Property="DialogBitmap" Value="dialog" MultiBuildValue="DefaultBuild:logo_bg.jpg" Type="1" MsiKey="DialogBitmap"/>
     <ROW Property="Manufacturer" Value="E9pay"/>
-    <ROW Property="ProductCode" Value="1033:{EE0B9F74-1242-4DE8-8315-3291653E1317} " Type="16"/>
+    <ROW Property="ProductCode" Value="1033:{A3B8FB4C-68EE-404F-B8FE-E097CCAF5F9A} " Type="16"/>
     <ROW Property="ProductLanguage" Value="1033"/>
     <ROW Property="ProductName" Value="E9pass Manager"/>
-    <ROW Property="ProductVersion" Value="1.1.9.0" Type="32" TargetFile="E9passManager.exe"/>
+    <ROW Property="ProductVersion" Value="1.2.0.0" Type="32" TargetFile="E9passManager.exe"/>
     <ROW Property="SecureCustomProperties" Value="OLDPRODUCTS;AI_NEWERPRODUCTFOUND;AI_SETUPEXEPATH;SETUPEXEDIR"/>
     <ROW Property="UpgradeCode" Value="{39056D89-FF42-4039-91FE-3347A220981E}"/>
     <ROW Property="WindowsType9X" MultiBuildValue="DefaultBuild:Windows 9x/ME" ValueLocId="-"/>
@@ -40,7 +41,8 @@
     <ROW Directory="assets_2_Dir" Directory_Parent="cupertino_icons_Dir" DefaultDir="assets"/>
     <ROW Directory="assets_Dir" Directory_Parent="web_Dir" DefaultDir="assets"/>
     <ROW Directory="awesome_dialog_Dir" Directory_Parent="packages_Dir" DefaultDir="AWESOM~1|awesome_dialog"/>
-    <ROW Directory="bin_Dir" Directory_Parent="pstree_Dir" DefaultDir="bin"/>
+    <ROW Directory="bin_1_Dir" Directory_Parent="pstree_Dir" DefaultDir="bin"/>
+    <ROW Directory="bin_Dir" Directory_Parent="distpython_Dir" DefaultDir="bin"/>
     <ROW Directory="cupertino_icons_Dir" Directory_Parent="packages_Dir" DefaultDir="CUPERT~1|cupertino_icons"/>
     <ROW Directory="distpython_Dir" Directory_Parent="app_Dir" DefaultDir="DIST-P~1|dist-python"/>
     <ROW Directory="duplexer_Dir" Directory_Parent="node_modules_Dir" DefaultDir="duplexer"/>
@@ -66,37 +68,41 @@
   <COMPONENT cid="caphyon.advinst.msicomp.MsiCompsComponent">
     <ROW Component="AI_ExePath" ComponentId="{9874B4F1-61DF-495D-8D24-752A73BE2026}" Directory_="APPDIR" Attributes="4" KeyPath="AI_ExePath"/>
     <ROW Component="APPDIR" ComponentId="{A71C2544-F119-4DC2-B9B7-10DB44D67B07}" Directory_="APPDIR" Attributes="0"/>
-    <ROW Component="AssetManifest.json" ComponentId="{2B90A737-9597-4623-A2AD-5E46F160044F}" Directory_="assets_Dir" Attributes="0" KeyPath="AssetManifest.json" Type="0"/>
-    <ROW Component="CupertinoIcons.ttf" ComponentId="{5B43E7F9-EB70-46B0-B2CD-D38223E3A520}" Directory_="assets_2_Dir" Attributes="0" Type="0"/>
+    <ROW Component="AssetManifest.json" ComponentId="{81BF21DC-4691-457E-8B50-8071DAEA226A}" Directory_="assets_Dir" Attributes="0" KeyPath="AssetManifest.json" Type="0"/>
+    <ROW Component="CupertinoIcons.ttf" ComponentId="{E06BE2F4-CC18-4EDA-B5A6-C4677025C620}" Directory_="assets_2_Dir" Attributes="0" Type="0"/>
     <ROW Component="E9passManager.exe" ComponentId="{A4B017F9-EC59-4269-9173-2964D8FF818D}" Directory_="APPDIR" Attributes="256" KeyPath="E9passManager.exe"/>
-    <ROW Component="Icon192.png" ComponentId="{DC449DEA-B1C9-43A4-9982-96E7A01AF1EA}" Directory_="icons_Dir" Attributes="0" KeyPath="Icon192.png" Type="0"/>
-    <ROW Component="MaterialIconsRegular.ttf" ComponentId="{D2500153-9F29-4CEA-83BF-A16681AB7431}" Directory_="fonts_Dir" Attributes="0" Type="0"/>
+    <ROW Component="Icon192.png" ComponentId="{E2F68C49-36AA-48DB-B3FF-76D5DA984BB3}" Directory_="icons_Dir" Attributes="0" KeyPath="Icon192.png" Type="0"/>
+    <ROW Component="MaterialIconsRegular.ttf" ComponentId="{8B013C87-32BB-4543-8A16-43397D8B2B5C}" Directory_="fonts_Dir" Attributes="0" Type="0"/>
     <ROW Component="ProductInformation" ComponentId="{3E142D36-3DAE-4A53-9D09-5A2264673327}" Directory_="APPDIR" Attributes="4" KeyPath="Version"/>
     <ROW Component="SHORTCUTDIR" ComponentId="{D88C22EE-11E3-47BE-9EAF-10BFAE2704FE}" Directory_="SHORTCUTDIR" Attributes="0"/>
     <ROW Component="am.pak" ComponentId="{FE2D8EB0-9007-49F2-817F-ABEF1E697EF3}" Directory_="locales_Dir" Attributes="0" KeyPath="am.pak" Type="0"/>
     <ROW Component="chrome_100_percent.pak" ComponentId="{C8519439-07E0-49F8-AC0B-7F87D61F8BCA}" Directory_="APPDIR" Attributes="0" KeyPath="chrome_100_percent.pak" Type="0"/>
     <ROW Component="d3dcompiler_47.dll" ComponentId="{AAA5BDCC-686A-4467-9A42-8A879A99424A}" Directory_="APPDIR" Attributes="256" KeyPath="d3dcompiler_47.dll"/>
-    <ROW Component="elevate.exe" ComponentId="{C540EC31-A5F1-4C80-8E72-47143DC673BF}" Directory_="resources_Dir" Attributes="0" KeyPath="elevate.exe"/>
-    <ROW Component="error.flr" ComponentId="{EC84F179-2217-4BDC-B25A-64F9E59AD2A9}" Directory_="flare_Dir" Attributes="0" KeyPath="error.flr" Type="0"/>
+    <ROW Component="elevate.exe" ComponentId="{47BBC579-0C81-440D-A0F1-2364879E6C96}" Directory_="resources_Dir" Attributes="0" KeyPath="elevate.exe"/>
+    <ROW Component="error.flr" ComponentId="{56CFC7B0-6466-4525-8356-F4D892AF4078}" Directory_="flare_Dir" Attributes="0" KeyPath="error.flr" Type="0"/>
     <ROW Component="ffmpeg.dll" ComponentId="{A667E2E4-5C67-4CFA-9CFF-32FD1258BD60}" Directory_="APPDIR" Attributes="256" KeyPath="ffmpeg.dll"/>
-    <ROW Component="fileApi.exe" ComponentId="{BA0994D9-D03A-49FB-B268-20B5E9D1A6E0}" Directory_="distpython_Dir" Attributes="256" KeyPath="fileApi.exe"/>
-    <ROW Component="icon.png" ComponentId="{31C987D4-5F0E-47D5-9AF4-F68E7FC3659C}" Directory_="app_Dir" Attributes="0" KeyPath="icon.png" Type="0"/>
-    <ROW Component="index.js" ComponentId="{663A2037-D8B0-4AF4-90A1-259DBF6725F9}" Directory_="duplexer_Dir" Attributes="0" KeyPath="index.js" Type="0"/>
-    <ROW Component="index.js_1" ComponentId="{CCDD977E-A12E-4B77-B0BB-EC76A16F7850}" Directory_="eventstream_Dir" Attributes="0" KeyPath="index.js_1" Type="0"/>
-    <ROW Component="index.js_2" ComponentId="{A6B65C11-B07C-40B9-9A84-19D945176F01}" Directory_="from_Dir" Attributes="0" KeyPath="index.js_2" Type="0"/>
-    <ROW Component="index.js_3" ComponentId="{08215D93-0059-4832-A2DC-D32AE091E256}" Directory_="mapstream_Dir" Attributes="0" KeyPath="index.js_3" Type="0"/>
-    <ROW Component="index.js_4" ComponentId="{AAFA74DE-FE02-4068-AC4E-959CA30C59F3}" Directory_="pausestream_Dir" Attributes="0" KeyPath="index.js_4" Type="0"/>
-    <ROW Component="index.js_5" ComponentId="{C502FB68-37BD-4883-8A01-BD01385F95D5}" Directory_="pstree_Dir" Attributes="0" KeyPath="index.js_5" Type="0"/>
-    <ROW Component="index.js_6" ComponentId="{FBE679A0-8CDB-4F88-A3BE-AAE0F2D41538}" Directory_="split_Dir" Attributes="0" KeyPath="index.js_6" Type="0"/>
-    <ROW Component="index.js_7" ComponentId="{89295B65-6F18-46D7-9A8C-91D5A19A8511}" Directory_="streamcombiner_Dir" Attributes="0" KeyPath="index.js_7" Type="0"/>
-    <ROW Component="index.js_8" ComponentId="{2F47E749-0543-43C1-AFF4-6BF96C209C5E}" Directory_="through_Dir" Attributes="0" KeyPath="index.js_8" Type="0"/>
-    <ROW Component="jpg" ComponentId="{21CD3976-6DB7-4F32-AD91-2A623A620300}" Directory_="images_Dir" Attributes="0" KeyPath="jpg" Type="0"/>
-    <ROW Component="last_build_id" ComponentId="{C5D7F27F-4CAC-4725-BFAC-DDA53C57B2C2}" Directory_="web_Dir" Attributes="0" KeyPath="last_build_id" Type="0"/>
+    <ROW Component="fileApi.exe" ComponentId="{6DF7B80C-D4B6-4C02-A274-678EFA3F32F4}" Directory_="distpython_Dir" Attributes="256" KeyPath="fileApi.exe"/>
+    <ROW Component="gsdll32.dll" ComponentId="{CD76C56A-205C-4193-B945-05966EFE5A4E}" Directory_="bin_Dir" Attributes="0" KeyPath="gsdll32.dll"/>
+    <ROW Component="gsdll32.lib" ComponentId="{1A9FFCA8-8BCF-4794-AF71-9856F5B35F7B}" Directory_="bin_Dir" Attributes="0" KeyPath="gsdll32.lib" Type="0"/>
+    <ROW Component="gswin32.exe" ComponentId="{F7E82C97-C637-42C4-B990-74ECD92260F8}" Directory_="bin_Dir" Attributes="0" KeyPath="gswin32.exe"/>
+    <ROW Component="gswin32c.exe" ComponentId="{E8027D76-8980-4DA0-91EB-4506CE92DC6E}" Directory_="bin_Dir" Attributes="0" KeyPath="gswin32c.exe"/>
+    <ROW Component="icon.png" ComponentId="{98DA6EBE-BE44-47A3-AA19-66E764ABFCBF}" Directory_="app_Dir" Attributes="0" KeyPath="icon.png" Type="0"/>
+    <ROW Component="index.js" ComponentId="{FBEDB651-8D8D-489D-9DD4-F97355DF00A3}" Directory_="duplexer_Dir" Attributes="0" KeyPath="index.js" Type="0"/>
+    <ROW Component="index.js_1" ComponentId="{5CFDD23E-24A5-4BA4-890D-AC14AAFB6454}" Directory_="eventstream_Dir" Attributes="0" KeyPath="index.js_1" Type="0"/>
+    <ROW Component="index.js_2" ComponentId="{BBD25702-D987-4706-BDE3-37A3E57A230F}" Directory_="from_Dir" Attributes="0" KeyPath="index.js_2" Type="0"/>
+    <ROW Component="index.js_3" ComponentId="{A15050EB-7925-4E49-B601-DEB87709FE14}" Directory_="mapstream_Dir" Attributes="0" KeyPath="index.js_3" Type="0"/>
+    <ROW Component="index.js_4" ComponentId="{54E1E608-8BA1-473D-9A8E-8F4DF677923A}" Directory_="pausestream_Dir" Attributes="0" KeyPath="index.js_4" Type="0"/>
+    <ROW Component="index.js_5" ComponentId="{4416817F-9E75-4D42-A0D0-FA8DFF217B56}" Directory_="pstree_Dir" Attributes="0" KeyPath="index.js_5" Type="0"/>
+    <ROW Component="index.js_6" ComponentId="{CEE184CC-FC66-46E0-88C5-4297BB42DC0A}" Directory_="split_Dir" Attributes="0" KeyPath="index.js_6" Type="0"/>
+    <ROW Component="index.js_7" ComponentId="{240BAE70-B828-4E9B-849B-C3EB54B54EDD}" Directory_="streamcombiner_Dir" Attributes="0" KeyPath="index.js_7" Type="0"/>
+    <ROW Component="index.js_8" ComponentId="{D61C314C-1D5C-42DE-91E3-E5B3FBC15418}" Directory_="through_Dir" Attributes="0" KeyPath="index.js_8" Type="0"/>
+    <ROW Component="jpg" ComponentId="{45FF049F-4CCB-4E44-B576-3021970FC0C0}" Directory_="images_Dir" Attributes="0" KeyPath="jpg" Type="0"/>
+    <ROW Component="last_build_id" ComponentId="{2B9685F9-36C4-423C-845F-6BD6C78D5EEE}" Directory_="web_Dir" Attributes="0" KeyPath="last_build_id" Type="0"/>
     <ROW Component="libEGL.dll" ComponentId="{E2C4E596-991C-4F5A-9F56-EE7F42F8DA19}" Directory_="APPDIR" Attributes="256" KeyPath="libEGL.dll"/>
     <ROW Component="libEGL.dll_1" ComponentId="{9A153E2D-25ED-4721-BAE9-1901316C5A28}" Directory_="swiftshader_Dir" Attributes="256" KeyPath="libEGL.dll_1"/>
     <ROW Component="libGLESv2.dll" ComponentId="{9AE090B0-7203-47A7-A688-C5EB92F9B38C}" Directory_="APPDIR" Attributes="256" KeyPath="libGLESv2.dll"/>
     <ROW Component="libGLESv2.dll_1" ComponentId="{5B960EB0-022B-41DD-AB9F-F420402D0E27}" Directory_="swiftshader_Dir" Attributes="256" KeyPath="libGLESv2.dll_1"/>
-    <ROW Component="pstree.js" ComponentId="{E4C49D3B-5D08-4266-9D69-D760A3EDF79F}" Directory_="bin_Dir" Attributes="0" KeyPath="pstree.js" Type="0"/>
+    <ROW Component="pstree.js" ComponentId="{002B865F-9DF6-43B5-AC25-E325C8D983CB}" Directory_="bin_1_Dir" Attributes="0" KeyPath="pstree.js" Type="0"/>
     <ROW Component="vk_swiftshader.dll" ComponentId="{9E270896-0B97-4FA1-939E-E1B5D2C0D90E}" Directory_="APPDIR" Attributes="256" KeyPath="vk_swiftshader.dll"/>
     <ROW Component="vulkan1.dll" ComponentId="{82A0034C-28C4-4D40-A478-873A20ED3C9E}" Directory_="APPDIR" Attributes="256" KeyPath="vulkan1.dll"/>
   </COMPONENT>
@@ -174,6 +180,12 @@
     <ROW File="vi.pak" Component_="am.pak" FileName="vi.pak" Attributes="0" SourcePath="dist\win-unpacked\locales\vi.pak" SelfReg="false"/>
     <ROW File="zhCN.pak" Component_="am.pak" FileName="zh-CN.pak" Attributes="0" SourcePath="dist\win-unpacked\locales\zh-CN.pak" SelfReg="false"/>
     <ROW File="zhTW.pak" Component_="am.pak" FileName="zh-TW.pak" Attributes="0" SourcePath="dist\win-unpacked\locales\zh-TW.pak" SelfReg="false"/>
+    <ROW File="libEGL.dll_1" Component_="libEGL.dll_1" FileName="libEGL.dll" Attributes="0" SourcePath="dist\win-unpacked\swiftshader\libEGL.dll" SelfReg="false"/>
+    <ROW File="libGLESv2.dll_1" Component_="libGLESv2.dll_1" FileName="LIBGLE~1.DLL|libGLESv2.dll" Attributes="0" SourcePath="dist\win-unpacked\swiftshader\libGLESv2.dll" SelfReg="false"/>
+    <ROW File="gsdll32.dll" Component_="gsdll32.dll" FileName="gsdll32.dll" Attributes="0" SourcePath="dist\win-unpacked\resources\app\dist-python\bin\gsdll32.dll" SelfReg="false"/>
+    <ROW File="gsdll32.lib" Component_="gsdll32.lib" FileName="gsdll32.lib" Attributes="0" SourcePath="dist\win-unpacked\resources\app\dist-python\bin\gsdll32.lib" SelfReg="false"/>
+    <ROW File="gswin32.exe" Component_="gswin32.exe" FileName="gswin32.exe" Attributes="0" SourcePath="dist\win-unpacked\resources\app\dist-python\bin\gswin32.exe" SelfReg="false" DigSign="true"/>
+    <ROW File="gswin32c.exe" Component_="gswin32c.exe" FileName="gswin32c.exe" Attributes="0" SourcePath="dist\win-unpacked\resources\app\dist-python\bin\gswin32c.exe" SelfReg="false" DigSign="true"/>
     <ROW File="fileApi.exe" Component_="fileApi.exe" FileName="fileApi.exe" Attributes="0" SourcePath="dist\win-unpacked\resources\app\dist-python\fileApi.exe" SelfReg="false" DigSign="true"/>
     <ROW File="icon.png" Component_="icon.png" FileName="icon.png" Attributes="0" SourcePath="dist\win-unpacked\resources\app\icon.png" SelfReg="false"/>
     <ROW File="index.js" Component_="index.js" FileName="index.js" Attributes="0" SourcePath="dist\win-unpacked\resources\app\node_modules\duplexer\index.js" SelfReg="false"/>
@@ -243,14 +255,15 @@
     <ROW File="main.dart.js.map" Component_="last_build_id" FileName="MAINDA~1.MAP|main.dart.js.map" Attributes="0" SourcePath="dist\win-unpacked\resources\app\web\main.dart.js.map" SelfReg="false"/>
     <ROW File="manifest.json" Component_="last_build_id" FileName="MANIFE~1.JSO|manifest.json" Attributes="0" SourcePath="dist\win-unpacked\resources\app\web\manifest.json" SelfReg="false"/>
     <ROW File="elevate.exe" Component_="elevate.exe" FileName="elevate.exe" Attributes="0" SourcePath="dist\win-unpacked\resources\elevate.exe" SelfReg="false" DigSign="true"/>
-    <ROW File="libEGL.dll_1" Component_="libEGL.dll_1" FileName="libEGL.dll" Attributes="0" SourcePath="dist\win-unpacked\swiftshader\libEGL.dll" SelfReg="false"/>
-    <ROW File="libGLESv2.dll_1" Component_="libGLESv2.dll_1" FileName="LIBGLE~1.DLL|libGLESv2.dll" Attributes="0" SourcePath="dist\win-unpacked\swiftshader\libGLESv2.dll" SelfReg="false"/>
   </COMPONENT>
   <COMPONENT cid="caphyon.advinst.msicomp.BootstrOptComponent">
     <ROW BootstrOptKey="GlobalOptions" DownloadFolder="[AppDataFolder][|Manufacturer]\[|ProductName]\prerequisites" Options="2"/>
   </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.BootstrapperUISequenceComponent">
+    <ROW Action="AI_DetectSoftware" Sequence="151"/>
+  </COMPONENT>
   <COMPONENT cid="caphyon.advinst.msicomp.BuildComponent">
-    <ROW BuildKey="DefaultBuild" BuildName="DefaultBuild" BuildOrder="1" BuildType="1" PackageFolder="installer" PackageFileName="E9pass Manager x86 (32 bit)" Languages="en" InstallationType="4" CabsLocation="1" PackageType="1" FilesInsideExe="true" ExeIconPath="icon.ico" ExtractionFolder="[AppDataFolder][|Manufacturer]\[|ProductName] [|ProductVersion]\install" UseLargeSchema="true" ExeName="E9pass Manager x86 (32 bit)"/>
+    <ROW BuildKey="DefaultBuild" BuildName="DefaultBuild" BuildOrder="1" BuildType="1" PackageFolder="installer" PackageFileName="E9pass Manager x86 (32 bit)" Languages="en" InstallationType="4" CabsLocation="1" PackageType="1" FilesInsideExe="true" ExeIconPath="icon.ico" ExtractionFolder="[AppDataFolder][|Manufacturer]\[|ProductName] [|ProductVersion]\install" ExtUI="true" UseLargeSchema="true" ExeName="E9pass Manager x86 (32 bit)"/>
   </COMPONENT>
   <COMPONENT cid="caphyon.advinst.msicomp.DictionaryComponent">
     <ROW Path="&lt;AI_DICTS&gt;ui.ail"/>
@@ -282,6 +295,7 @@
   </COMPONENT>
   <COMPONENT cid="caphyon.advinst.msicomp.MsiBinaryComponent">
     <ROW Name="Prereq.dll" SourcePath="&lt;AI_CUSTACTS&gt;Prereq.dll"/>
+    <ROW Name="SoftwareDetector.dll" SourcePath="&lt;AI_CUSTACTS&gt;SoftwareDetector.dll"/>
     <ROW Name="aicustact.dll" SourcePath="&lt;AI_CUSTACTS&gt;aicustact.dll"/>
     <ROW Name="logo_bg.jpg" SourcePath="installer_assets\logo_bg.jpg"/>
     <ROW Name="logo_bg_banner.jpg" SourcePath="installer_assets\logo_bg_banner.jpg"/>
@@ -323,6 +337,7 @@
     <ROW Action="AI_DeleteLzma" Type="1025" Source="lzmaextractor.dll" Target="DeleteLZMAFiles"/>
     <ROW Action="AI_DeleteRCadLzma" Type="51" Source="AI_DeleteRLzma" Target="[AI_SETUPEXEPATH]"/>
     <ROW Action="AI_DeleteRLzma" Type="1281" Source="lzmaextractor.dll" Target="DeleteLZMAFiles"/>
+    <ROW Action="AI_DetectSoftware" Type="257" Source="SoftwareDetector.dll" Target="OnDetectSoftware"/>
     <ROW Action="AI_DpiContentScale" Type="1" Source="aicustact.dll" Target="DpiContentScale"/>
     <ROW Action="AI_EnableDebugLog" Type="321" Source="aicustact.dll" Target="EnableDebugLog"/>
     <ROW Action="AI_EstimateExtractFiles" Type="1" Source="Prereq.dll" Target="EstimateExtractFiles"/>
@@ -354,6 +369,10 @@
     <ROW Feature_="MainFeature" Component_="vk_swiftshader.dll"/>
     <ROW Feature_="MainFeature" Component_="vulkan1.dll"/>
     <ROW Feature_="MainFeature" Component_="am.pak"/>
+    <ROW Feature_="MainFeature" Component_="gsdll32.dll"/>
+    <ROW Feature_="MainFeature" Component_="gsdll32.lib"/>
+    <ROW Feature_="MainFeature" Component_="gswin32.exe"/>
+    <ROW Feature_="MainFeature" Component_="gswin32c.exe"/>
     <ROW Feature_="MainFeature" Component_="fileApi.exe"/>
     <ROW Feature_="MainFeature" Component_="icon.png"/>
     <ROW Feature_="MainFeature" Component_="index.js"/>
@@ -365,6 +384,10 @@
     <ROW Feature_="MainFeature" Component_="index.js_5"/>
     <ROW Feature_="MainFeature" Component_="index.js_6"/>
     <ROW Feature_="MainFeature" Component_="index.js_7"/>
+    <ROW Feature_="MainFeature" Component_="SHORTCUTDIR"/>
+    <ROW Feature_="MainFeature" Component_="AI_ExePath"/>
+    <ROW Feature_="MainFeature" Component_="libEGL.dll_1"/>
+    <ROW Feature_="MainFeature" Component_="libGLESv2.dll_1"/>
     <ROW Feature_="MainFeature" Component_="index.js_8"/>
     <ROW Feature_="MainFeature" Component_="last_build_id"/>
     <ROW Feature_="MainFeature" Component_="AssetManifest.json"/>
@@ -374,10 +397,6 @@
     <ROW Feature_="MainFeature" Component_="CupertinoIcons.ttf"/>
     <ROW Feature_="MainFeature" Component_="Icon192.png"/>
     <ROW Feature_="MainFeature" Component_="elevate.exe"/>
-    <ROW Feature_="MainFeature" Component_="SHORTCUTDIR"/>
-    <ROW Feature_="MainFeature" Component_="AI_ExePath"/>
-    <ROW Feature_="MainFeature" Component_="libEGL.dll_1"/>
-    <ROW Feature_="MainFeature" Component_="libGLESv2.dll_1"/>
   </COMPONENT>
   <COMPONENT cid="caphyon.advinst.msicomp.MsiIconsComponent">
     <ROW Name="icon.exe" SourcePath="icon.ico" Index="0"/>
@@ -390,7 +409,7 @@
     <ROW Action="AI_ResolveKnownFolders" Sequence="52"/>
     <ROW Action="AI_EnableDebugLog" Sequence="51"/>
     <ROW Action="AI_BACKUP_AI_SETUPEXEPATH" Sequence="99" Builds="DefaultBuild"/>
-    <ROW Action="AI_RESTORE_AI_SETUPEXEPATH" Condition="AI_SETUPEXEPATH_ORIGINAL" Sequence="101" Builds="DefaultBuild"/>
+    <ROW Action="AI_RESTORE_AI_SETUPEXEPATH" Condition="AI_SETUPEXEPATH_ORIGINAL" Sequence="102" Builds="DefaultBuild"/>
     <ROW Action="AI_DeleteCadLzma" Condition="SETUPEXEDIR=&quot;&quot; AND Installed AND (REMOVE&lt;&gt;&quot;ALL&quot;) AND (AI_INSTALL_MODE&lt;&gt;&quot;Remove&quot;) AND (NOT PATCH)" Sequence="199" Builds="DefaultBuild"/>
     <ROW Action="AI_DeleteRCadLzma" Condition="SETUPEXEDIR=&quot;&quot; AND Installed AND (REMOVE&lt;&gt;&quot;ALL&quot;) AND (AI_INSTALL_MODE&lt;&gt;&quot;Remove&quot;) AND (NOT PATCH)" Sequence="198" Builds="DefaultBuild"/>
     <ROW Action="AI_ExtractCadLzma" Condition="SETUPEXEDIR=&quot;&quot; AND Installed AND (REMOVE&lt;&gt;&quot;ALL&quot;) AND (AI_INSTALL_MODE&lt;&gt;&quot;Remove&quot;) AND (NOT PATCH)" Sequence="197" Builds="DefaultBuild"/>
@@ -401,6 +420,7 @@
     <ROW Action="AI_ExtractFiles" Sequence="3998" Builds="DefaultBuild"/>
     <ROW Action="AI_DATA_SETTER" Sequence="3997"/>
     <ROW Action="AI_EstimateExtractFiles" Sequence="3999" Builds="DefaultBuild"/>
+    <ROW Action="AI_DetectSoftware" Sequence="101"/>
   </COMPONENT>
   <COMPONENT cid="caphyon.advinst.msicomp.MsiInstallUISequenceComponent">
     <ROW Action="AI_RESTORE_LOCATION" Condition="APPDIR=&quot;&quot;" Sequence="749"/>
@@ -408,12 +428,14 @@
     <ROW Action="AI_DpiContentScale" Sequence="52"/>
     <ROW Action="AI_EnableDebugLog" Sequence="51"/>
     <ROW Action="AI_BACKUP_AI_SETUPEXEPATH" Sequence="99"/>
-    <ROW Action="AI_RESTORE_AI_SETUPEXEPATH" Condition="AI_SETUPEXEPATH_ORIGINAL" Sequence="101"/>
+    <ROW Action="AI_RESTORE_AI_SETUPEXEPATH" Condition="AI_SETUPEXEPATH_ORIGINAL" Sequence="102"/>
+    <ROW Action="AI_DetectSoftware" Sequence="101"/>
   </COMPONENT>
   <COMPONENT cid="caphyon.advinst.msicomp.MsiLaunchConditionsComponent">
     <ROW Condition="((VersionNT &lt;&gt; 501) AND (VersionNT &lt;&gt; 502))" Description="[ProductName] cannot be installed on [WindowsTypeNT5XDisplay]." DescriptionLocId="AI.LaunchCondition.NoNT5X" IsPredefined="true" Builds="DefaultBuild"/>
     <ROW Condition="(VersionNT &lt;&gt; 400)" Description="[ProductName] cannot be installed on [WindowsTypeNT40Display]." DescriptionLocId="AI.LaunchCondition.NoNT40" IsPredefined="true" Builds="DefaultBuild"/>
     <ROW Condition="(VersionNT &lt;&gt; 500)" Description="[ProductName] cannot be installed on [WindowsTypeNT50Display]." DescriptionLocId="AI.LaunchCondition.NoNT50" IsPredefined="true" Builds="DefaultBuild"/>
+    <ROW Condition="AI_DETECTED_INTERNET_CONNECTION" Description="[ProductName] requires an active Internet connection for installation. Please check your network configuration and proxy settings." DescriptionLocId="AI.LaunchCondition.Internet" IsPredefined="true" Builds="DefaultBuild"/>
     <ROW Condition="SETUPEXEDIR OR (REMOVE=&quot;ALL&quot;)" Description="This package can only be run from a bootstrapper." DescriptionLocId="AI.LaunchCondition.RequireBootstrapper" IsPredefined="true" Builds="DefaultBuild"/>
     <ROW Condition="VersionNT" Description="[ProductName] cannot be installed on [WindowsType9XDisplay]." DescriptionLocId="AI.LaunchCondition.No9X" IsPredefined="true" Builds="DefaultBuild"/>
   </COMPONENT>

@@ -1,13 +1,14 @@
 {
   "name": "e9pass_cert",
-  "version": "1.1.9",
+  "version": "1.2.0",
   "description": "Desktpo Application For E9pay File Management",
   "main": "renderer.js",
   "scripts": {
     "start": "electron .",
-    "package": "npm run -s package-python && npm run -s package-electron",
+    "package": "npm run -s package-python && npm run -s package-electron && npm run -s clean",
     "package-python": "pyinstaller -w -F --hidden-import=pkg_resources.py2_warn app/fileApi.py --distpath dist-python",
-    "package-electron": "electron-builder"
+    "package-electron": "electron-builder",
+    "clean": "python cleaner.py"
   },
   "build": {
     "appId": "com.e9pay.e9pass",
@@ -28,6 +29,13 @@
       {
         "from": "dist-python/",
         "to": "app/dist-python",
+        "filter": [
+          "**/*"
+        ]
+      },
+      {
+        "from": "app/bin/",
+        "to": "app/dist-python/bin",
         "filter": [
           "**/*"
         ]

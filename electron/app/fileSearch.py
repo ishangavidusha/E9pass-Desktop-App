@@ -4,6 +4,7 @@ import shutil
 import pathlib
 import zipfile
 import string
+from pdf_compressor import compress
 
 E9PASS = 'Desktop\\E9pass'
 E9PASS_USER = 'Desktop\\E9pass\\USER'
@@ -85,9 +86,11 @@ def creatUser(userDetails):
     try:
         arcNumber = userDetails["arcNumber"]
         certificateName = userDetails["certificateName"]
-        path = pathlib.Path(os.path.join(backUpDir, arcNumber + '\\NPKI\\KICA\\USER\\' + certificateName))
+        table = str.maketrans('', '', string.punctuation)
+        folderName = arcNumber.translate(table)
+        path = pathlib.Path(os.path.join(backUpDir, folderName + '\\NPKI\\KICA\\USER\\' + certificateName))
         path.mkdir(parents=True, exist_ok=True)
-        destination = os.path.join(backUpDir, arcNumber + '\\NPKI\\KICA\\USER\\' + certificateName)
+        destination = os.path.join(backUpDir, folderName + '\\NPKI\\KICA\\USER\\' + certificateName)
         source = os.path.join(certificateFilesPath, certificateName)
         copyAndOverwrite(source, destination)
         response["certStatus"] = True
@@ -95,10 +98,13 @@ def creatUser(userDetails):
         try:
             pdfName = userDetails["pdfName"]
             source = os.path.join(pdfFilesPath, pdfName)
-            destination = os.path.join(backUpDir, arcNumber)
-            shutil.copy(source, destination)
-            response["pdfStatus"] = True
-            response["pdfMsg"] = 'Success'
+            destination = os.path.join(backUpDir, os.path.join(folderName, pdfName))
+            result = None
+            result = compress(source, destination, power=2)
+            while result is None:
+                pass
+            response["pdfStatus"] = result
+            response["pdfMsg"] = 'PDF Compress Status'
         except:
             response["pdfStatus"] = False
             response["pdfMsg"] = 'Unable to copy Pdf!'
@@ -106,9 +112,9 @@ def creatUser(userDetails):
             os.chdir(backUpDir)
             table = str.maketrans('', '', string.punctuation)
             fileName = arcNumber.translate(table)
-            result = shutil.make_archive(fileName, 'zip', base_dir=arcNumber)
+            result = shutil.make_archive(fileName, 'zip', base_dir=folderName)
             if bool(result):
-                shutil.rmtree(arcNumber)
+                shutil.rmtree(folderName)
             response["zipStatus"] = True
             response["zipMsg"] = 'Success'
             return response
