@@ -5,8 +5,12 @@ import sys
 import shutil
 
 def get_ghostscript_path():
-    prgmPath = os.path.dirname(os.path.abspath(__file__))
-    pathName = "resources\\app\\dist-python\\bin\\gswin32c.exe"
+    prgmPath = ""
+    if os.environ.get("PROGRAMFILES(X86)") is None: #this case is 32bit 
+        prgmPath = os.environ.get("PROGRAMFILES")
+    else:
+        prgmPath = os.environ.get("PROGRAMFILES(X86)")
+    pathName = "E9pay\\E9pass Manager\\resources\\app\\dist-python\\bin\\gswin32c.exe"
     gostPath = os.path.join(prgmPath, pathName)
     if os.path.isfile(gostPath):
         return gostPath
@@ -46,10 +50,3 @@ def compress(input_file_path, output_file_path, power=0):
     except:
         print('error')
         return False
-    
-
-
-source = "C:\\Users\\E9pay Vidusha\\Desktop\\E9pass\\PDF\\7309147451946-200627-3987-5532.pdf"
-dist = "C:\\Users\\E9pay Vidusha\\Desktop\\E9pass\\7309147451946-200627-3987-5532.pdf"
-
-compress(source, dist, power=2)
