@@ -5,12 +5,8 @@ import sys
 import shutil
 
 def get_ghostscript_path():
-    prgmPath = ""
-    if os.environ.get("PROGRAMFILES(X86)") is None: #this case is 32bit 
-        prgmPath = os.environ.get("PROGRAMFILES")
-    else:
-        prgmPath = os.environ.get("PROGRAMFILES(X86)")
-    pathName = "E9pay\\E9pass Manager\\resources\\app\\dist-python\\bin\\gswin32c.exe"
+    prgmPath = os.path.dirname(os.path.abspath(__file__))
+    pathName = "resources\\app\\dist-python\\bin\\gswin32c.exe"
     gostPath = os.path.join(prgmPath, pathName)
     if os.path.isfile(gostPath):
         return gostPath

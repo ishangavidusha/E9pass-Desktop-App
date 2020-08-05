@@ -8,6 +8,15 @@ from sheetOpt import *
 app = Flask(__name__)
 CORS(app)
 
+@app.route("/path", methods=['GET'])
+def onPath():
+    if request.method == 'GET':
+        return jsonify({
+            "getcwd" : os.getcwd(),
+            "__file__" :  __file__,
+            "abspath" : os.path.abspath(__file__)
+        })
+
 @app.route("/startUpCheck", methods=['GET'])
 def onStart():
     if request.method == 'GET':

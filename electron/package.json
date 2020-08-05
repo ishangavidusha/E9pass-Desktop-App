@@ -1,6 +1,6 @@
 {
   "name": "e9pass_cert",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "Desktpo Application For E9pay File Management",
   "main": "renderer.js",
   "scripts": {

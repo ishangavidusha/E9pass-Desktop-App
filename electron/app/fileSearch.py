@@ -128,6 +128,3 @@ def creatUser(userDetails):
         response["certMsg"] = 'Unable to copy Certificate!'
         return response
 
-result = getPdfAll()
-for item in result:
-    print(item['appNumber'])
