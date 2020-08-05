@@ -8,7 +8,7 @@ This is a windows desktop application for file management
 
 ## Installation
 
-Download application from [here](https://github.com/ishangavidusha/E9pass-Desktop-App/releases/tag/v1.1.9) to install E9pass Manager.
+Download application from [here](https://github.com/ishangavidusha/E9pass-Desktop-App/releases/) to install E9pass Manager.
 
 ## Build
 
