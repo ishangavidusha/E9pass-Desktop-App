@@ -58,9 +58,9 @@ def getPdfAll():
         pdf = {}
         try:
             nameList = item.split('-')
-            if len(nameList) == 4:
-                if len(nameList[1]) == 6 and len(nameList[2]) == 4 and len(nameList[3]) == 8:
-                    appNumber = nameList[1] + '-' + nameList[2] + '-' + nameList[3].split('.')[0]
+            if len(nameList) >= 3:
+                if len(nameList[-3]) == 6 and len(nameList[-2]) == 4 and len(nameList[-1]) == 8:
+                    appNumber = nameList[-3] + '-' + nameList[-2] + '-' + nameList[-1].split('.')[0]
                     pdf["pdfName"] = item
                     pdf["appNumber"] = appNumber
                     userPdfList.append(pdf)
@@ -128,3 +128,6 @@ def creatUser(userDetails):
         response["certMsg"] = 'Unable to copy Certificate!'
         return response
 
+result = getPdfAll()
+for item in result:
+    print(item['appNumber'])

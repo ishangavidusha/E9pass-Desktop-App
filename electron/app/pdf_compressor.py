@@ -1,6 +1,6 @@
 
 import subprocess
-import os.path
+import os
 import sys
 import shutil
 
@@ -10,10 +10,8 @@ def get_ghostscript_path():
         prgmPath = os.environ.get("PROGRAMFILES")
     else:
         prgmPath = os.environ.get("PROGRAMFILES(X86)")
-    print(prgmPath)
     pathName = "E9pay\\E9pass Manager\\resources\\app\\dist-python\\bin\\gswin32c.exe"
     gostPath = os.path.join(prgmPath, pathName)
-    print(gostPath)
     if os.path.isfile(gostPath):
         return gostPath
     raise FileNotFoundError(f'No GhostScript executable was found on path')
@@ -38,18 +36,20 @@ def compress(input_file_path, output_file_path, power=0):
     if input_file_path.split('.')[-1].lower() != 'pdf':
         return False
 
-    # try:
-    gs = get_ghostscript_path()
-    subprocess.call([gs, '-sDEVICE=pdfwrite', '-dCompatibilityLevel=1.4',
-                    '-dPDFSETTINGS={}'.format(quality[power]),
-                    '-dNOPAUSE', '-dQUIET', '-dBATCH',
-                    '-sOutputFile={}'.format(output_file_path),
-                    input_file_path]
-    )
-    return True
-    # except:
-    #     print('error')
-    #     return False
+    try:
+        gs = get_ghostscript_path()
+        CREATE_NO_WINDOW = 0x08000000
+        # DETACHED_PROCESS = 0x00000008
+        subprocess.call([gs, '-sDEVICE=pdfwrite', '-dCompatibilityLevel=1.4',
+                        '-dPDFSETTINGS={}'.format(quality[power]),
+                        '-dNOPAUSE', '-dQUIET', '-dBATCH',
+                        '-sOutputFile={}'.format(output_file_path),
+                        input_file_path], creationflags=CREATE_NO_WINDOW
+        )
+        return True
+    except:
+        print('error')
+        return False
     
 
 
